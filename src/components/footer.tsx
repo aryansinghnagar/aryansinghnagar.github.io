@@ -1,17 +1,17 @@
 'use client';
 
 import { Github, Linkedin, Mail, Download, Heart } from 'lucide-react';
-import { profile, navItems } from '@/lib/portfolio-data';
+import { profile, socials, navItems } from '@/lib/portfolio-data';
+
+const socialIcons = {
+  github: Github,
+  linkedin: Linkedin,
+  mail: Mail,
+  file: Download,
+};
 
 export function Footer() {
   const year = new Date().getFullYear();
-
-  const socialLinks = [
-    { name: 'GitHub', href: 'https://github.com/aryansinghnagar', icon: Github },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/aryan-singh-nagar-414675263', icon: Linkedin },
-    { name: 'Email', href: 'mailto:asn.dyrnwyn@gmail.com', icon: Mail },
-    { name: 'Resume', href: profile.resumeUrl, icon: Download },
-  ];
 
   return (
     <footer className="relative border-t border-border/40 bg-background/60 backdrop-blur-sm">
@@ -58,8 +58,8 @@ export function Footer() {
               Connect
             </div>
             <div className="flex gap-2">
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
+              {socials.map((social) => {
+                const Icon = socialIcons[social.icon as keyof typeof socialIcons];
                 return (
                   <a
                     key={social.name}

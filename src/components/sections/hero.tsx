@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Download, Github, Linkedin, Mail, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import { profile, socials } from '@/lib/portfolio-data';
 
 const socialIcons = {
@@ -152,10 +153,13 @@ export function Hero() {
                 {/* Top accent */}
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-neon to-transparent z-10" />
 
-                <img
+                <Image
                   src={profile.headshot}
                   alt="Aryan Singh Nagar — headshot"
-                  className="w-full h-full object-cover"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 256px, (max-width: 1024px) 320px, 384px"
+                  className="object-cover"
                 />
 
                 {/* Overlay gradient */}
