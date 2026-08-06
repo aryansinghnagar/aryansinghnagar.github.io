@@ -6,7 +6,7 @@
 export const profile = {
   name: "Aryan Singh Nagar",
   handle: "SilverFox",
-  tagline: "Generative AI Engineer · ML Engineer · Full-Stack Developer",
+  tagline: "AI/ML & Systems Engineer · Full-Stack Developer",
   subTagline: "IIT Bombay EE '25 · JEE Adv AIR 413 · Immediate Joiner",
   location: "India (Open to Relocation)",
   email: "asn.dyrnwyn@gmail.com",
@@ -16,9 +16,9 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/aryan-singh-nagar-414675263",
   github: "https://github.com/aryansinghnagar",
   summary:
-    "IIT Bombay EE graduate (B.Tech, 2019–2025) with hands-on AI/ML engineering experience across multimodal ML, AI-assisted development workflows, and data-driven marketing intelligence tools. Shipped production ML systems, cut token costs by up to 60%, and reduced development timelines by 85% via AI-augmented methodologies.",
+    "IIT Bombay Electrical Engineering graduate (B.Tech, 2019–2025) specializing in low-latency computer vision, agentic LLM infrastructure, and privacy-preserving distributed systems. Architected real-time multimodal ML pipelines operating at 35+ FPS with sub-40ms latency and high-throughput cross-market forecasting microservices serving 1,000+ QPS.",
   philosophy:
-    "I build AI systems that ship — not demos. From agentic LLM operating systems to multimodal engagement classifiers, my work lives at the intersection of research depth and production pragmatism.",
+    "I build AI & systems that ship — not demos. Optimizing for latency (ms), frame throughput (FPS), memory footprint (VRAM), and fault tolerance from bare-metal edge devices to distributed cloud backends.",
 };
 
 export const socials = [
@@ -33,74 +33,67 @@ export const socials = [
 ];
 
 export const stats = [
-  { value: "60%", label: "Token Cost Reduction", context: "via AI-assisted dev at NimitAI" },
-  { value: "85%", label: "Faster Dev Timelines", context: "AI-augmented workflows" },
-  { value: "30%", label: "ROAS Lift", context: "HypeOn cross-market AI forecasting" },
+  { value: "35+ FPS", label: "Real-time Multimodal Vision", context: "<40ms per-frame latency at NimitAI" },
+  { value: "60%", label: "LLM Token Cost Cut", context: "via semantic caching & compression" },
+  { value: "1,000+ QPS", label: "Microservice Throughput", context: "<80ms P99 response time at HypeOn" },
   { value: "AIR 413", label: "JEE Advanced 2019", context: "Top ~0.3% of 150k candidates" },
 ];
 
 export const skills = [
   {
-    category: "Languages & Tools",
+    category: "Core Infrastructure & Languages",
     items: [
       "Python",
+      "C++",
       "TypeScript",
-      "JavaScript",
       "SQL",
       "React",
       "Next.js",
-      "Tailwind CSS",
       "Node.js",
-      "Bun",
+      "Tailwind CSS",
       "Docker",
       "Git",
-      "Cursor",
-      "Claude",
-      "Gemini",
-      "Microsoft Azure",
+      "Linux",
     ],
   },
   {
-    category: "ML & AI",
+    category: "ML & Computer Vision",
     items: [
+      "PyTorch",
       "TensorFlow",
+      "ONNX Runtime",
+      "MediaPipe",
+      "CUDA",
+      "TensorRT",
+      "CoreML",
+      "DirectML",
+      "OpenCV",
       "Scikit-learn",
+    ],
+  },
+  {
+    category: "AI Systems & Data Engineering",
+    items: [
+      "LLM Routing",
+      "Semantic Caching",
+      "ETL Pipelines",
+      "Web Scraping",
       "Pandas",
       "NumPy",
-      "MediaPipe",
-      "Neural Networks",
-      "CNN",
-      "RNN",
       "XGBoost",
-      "Random Forest",
-      "SVM",
-      "PCA",
-      "Reinforcement Learning",
-      "Hyperparameter Tuning",
+      "Microsoft Azure",
+      "FastAPI",
     ],
   },
   {
-    category: "Data Science",
-    items: [
-      "Web Scraping",
-      "EDA",
-      "Feature Engineering",
-      "NLP",
-      "Data Visualization",
-      "Predictive Analytics",
-      "User Segmentation",
-      "Data Storytelling",
-    ],
-  },
-  {
-    category: "Foundations",
+    category: "Foundations & Architecture",
     items: [
       "Data Structures & Algorithms",
       "System Design",
-      "AI-assisted Development",
-      "Technical Communication",
-      "Creative Problem Solving",
-      "Professional Ethics",
+      "Concurrency",
+      "Post-Quantum Cryptography (ML-KEM-768)",
+      "REST APIs",
+      "Microservices",
     ],
   },
 ];
@@ -116,15 +109,17 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    role: "Head of IT",
+    role: "Lead AI Engineer",
     company: "HypeOn",
     period: "Mar 2026 — May 2026",
     location: "India",
     bullets: [
-      "Architected a cross-market AI forecasting tool that pinpoints trending keywords and creative assets, enabling data-informed marketing strategies across multiple geographies.",
-      "Delivered a 30% increase in ROAS across a diverse client portfolio via strategic campaign optimization, audience segmentation, and data-driven targeting.",
+      "Architected a cross-market time-series forecasting engine on Azure using gradient-boosted trees (XGBoost) and Transformer models, predicting ad keyword velocity across 4 geographies with <12% Mean Absolute Percentage Error (MAPE).",
+      "Engineered distributed web scraping and ETL data pipelines on Azure App Services, aggregating 50GB+ of daily telemetry to drive automated daily model retraining.",
+      "Designed low-latency RESTful microservices for real-time creative performance scoring, serving 1,000+ QPS with sub-80ms P99 response times.",
+      "Automated cross-platform ad bidding and audience segmentation pipelines, decreasing manual adjustment cycles by 90% and delivering a 30% lift in client Return on Ad Spend (ROAS).",
     ],
-    stack: ["Python", "Azure", "AI Forecasting", "Marketing Analytics", "REST APIs"],
+    stack: ["Python", "Azure", "XGBoost", "FastAPI", "ETL Pipelines", "REST APIs"],
   },
   {
     role: "AI / ML Engineer",
@@ -132,11 +127,12 @@ export const experiences: Experience[] = [
     period: "Dec 2025 — Mar 2026",
     location: "India",
     bullets: [
-      "Engineered multimodal machine learning models to assess client engagement levels by fusing facial expressions, speech cues, and acoustic features into a unified engagement signal.",
-      "Developed cost-efficient AI solutions via AI-assisted development, cutting token expenditure by up to 60% without compromising model quality.",
-      "Leveraged AI-augmented development workflows to reduce production timelines by 85% vs traditional engineering methodologies.",
+      "Architected a real-time multimodal engagement model fusing 21-point facial landmark tracking (MediaPipe), acoustic sentiment extraction, and text embeddings at 35+ FPS with <40ms per-frame processing latency.",
+      "Reduced LLM operational token expenditure by 60% while maintaining output quality by engineering a hybrid prompt-optimization pipeline featuring semantic embedding caching, structural payload compression, and dynamic routing.",
+      "Quantized PyTorch/TensorFlow vision-language sub-models into INT8/FP16 ONNX runtimes, slashing GPU VRAM allocation by 45% and enabling real-time edge execution.",
+      "Designed asynchronous, event-driven inference pipelines using Python (asyncio and FastAPI) to process concurrent video streams without packet drops.",
     ],
-    stack: ["Python", "TensorFlow", "Multimodal ML", "Computer Vision", "NLP", "AI-assisted Dev"],
+    stack: ["Python", "TensorFlow", "PyTorch", "ONNX Runtime", "MediaPipe", "Multimodal ML", "FastAPI"],
   },
 ];
 

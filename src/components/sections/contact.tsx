@@ -78,8 +78,8 @@ export function Contact() {
           </h2>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-neon to-transparent mx-auto" />
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Open to Generative AI, ML, LLM, and Full-Stack roles — especially at Microsoft, Apple,
-            Amazon, Netflix, Google, Meta, OpenAI, Anthropic, and Tier-1 quant firms. Available
+            Open to AI Systems Engineering, Core ML Infrastructure, and High-Throughput Software
+            Engineering roles at Tier-1 tech companies and frontier AI research labs. Available
             immediately, open to relocation.
           </p>
         </motion.div>

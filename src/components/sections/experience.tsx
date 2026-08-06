@@ -107,9 +107,9 @@ export function Experience() {
                 </span>
               </div>
               <div className="flex flex-wrap gap-6 text-sm">
-                <ImpactStat value="60%" label="Token cost cut" />
-                <ImpactStat value="85%" label="Faster dev timelines" />
-                <ImpactStat value="30%" label="ROAS lift" />
+                <ImpactStat value="35+ FPS" label="Multimodal Vision (<40ms)" />
+                <ImpactStat value="60%" label="LLM Token Cost Cut" />
+                <ImpactStat value="1,000+ QPS" label="Microservice Throughput" />
               </div>
             </CardContent>
           </Card>

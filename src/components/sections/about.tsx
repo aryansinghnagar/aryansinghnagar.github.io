@@ -34,12 +34,11 @@ export function About() {
             className="lg:col-span-7 space-y-5"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I&apos;m <span className="text-foreground font-medium">Aryan Singh Nagar</span> — an
-              AI/ML engineer and full-stack developer with a B.Tech in Electrical Engineering from{' '}
-              <span className="text-neon font-medium">IIT Bombay (2019–2025)</span>. My handle{' '}
+              I&apos;m <span className="text-foreground font-medium">Aryan Singh Nagar</span> — an{' '}
+              <span className="text-neon font-medium">AI/ML &amp; Systems Engineer</span> with a B.Tech in Electrical Engineering from{' '}
+              <span className="text-foreground font-medium">IIT Bombay (2019–2025)</span>. My handle{' '}
               <span className="text-platinum font-mono">SilverFox</span> follows me across GitHub
-              and personal projects — a small signature of individuality in otherwise serious
-              engineering work.
+              and personal projects — a signature of individuality in serious engineering work.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
