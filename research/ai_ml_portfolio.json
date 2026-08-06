@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=qeKxE1a5msA",
+    "name": "Build a Professional Machine Learning Engineer Portfolio",
+    "snippet": "In this video, I'll guide you through creating a sleek and modern Machine Learning Engineer Portfolio Website using React JS and Tailwind CSS .\nBuilding sections like Hero, About, Projects, and Contact. 4. Best practices for showcasing machine learning and data science projects.",
+    "host_name": "www.youtube.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mitchellsparrow.com",
+    "name": "Mitch's Portfolio",
+    "snippet": "I am a Software / Machine Learning Engineer currently based in the United Kingdom. AI , robots and code. a variety of Machine Learning models including 3D ...\nMachine Learning Engineer · Built decentralised AI solutions on the Bittensor blockchain · Worked on and fine tuned a variety of Machine Learning models including ...",
+    "host_name": "www.mitchellsparrow.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.butternut.ai/portfolio/machine-learning-engineer-portfolio",
+    "name": "Machine Learning Engineer Portfolio Website Builder",
+    "snippet": "Create a professional Machine Learning Engineer portfolio website in seconds with our free AI-powered builder. Present models, experiments, and notebooks … ...\nCreate a professional Machine Learning Engineer portfolio website in seconds with our free AI-powered builder. Present models, experiments, and notebooks in a ...",
+    "host_name": "www.butternut.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1bsezcf/d_whats_more_impressive_in_a_ml_portfolio",
+    "name": "[D] What's more impressive in a ML portfolio: implementing",
+    "snippet": "Hey guys, what do hiring managers in companies would prefer more from your experience, having a great implementation of papers or great practical projects? ...",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.springboard.com/blog/data-science/machine-learning-portfolio",
+    "name": "How To Build a Machine Learning Portfolio (+ Examples)",
+    "snippet": "Jan 27, 2023 — A machine learning portfolio is a collection of personal projects and learning experiences demonstrating your ability to apply machine learning ... Read more",
+    "host_name": "www.springboard.com",
+    "rank": 4,
+    "date": "Jan 27, 2023",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.udacity.com/blog/20-machine-learning-projects-that-will-boost-your-portfolio",
+    "name": "20 Machine Learning Projects to Boost Your Portfolio (2026)",
+    "snippet": "Jun 8, 2025 — Choose the right machine learning projects for your portfolio . 20 ideas by difficulty level, with tools, datasets, and what each project ...\nChoose the right machine learning projects for your portfolio. 20 ideas by difficulty level, with tools, datasets, and what each project ...",
+    "host_name": "www.udacity.com",
+    "rank": 5,
+    "date": "Jun 8, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://towardsdatascience.com/dont-build-an-ml-portfolio-without-these-projects",
+    "name": "Don't Build an ML Portfolio Without These Projects",
+    "snippet": "Dec 10, 2025 — Your project should ideally include the following: Data collection and storage . Data preprocessing. Model training and evaluation. Model ...",
+    "host_name": "towardsdatascience.com",
+    "rank": 6,
+    "date": "Dec 10, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://zenvanriel.com/ai-engineer-blog/how-to-build-a-portfolio-website",
+    "name": "How to Build a Portfolio Website for AI Engineers",
+    "snippet": "Aug 23, 2025 — Learn how to create an outstanding AI engineering portfolio that showcases your skills and sets you apart from thousands of applicants with ...\nLook for templates with clean lines, ample white space, and intuitive navigation that can elegantly showcase complex technical work.",
+    "host_name": "zenvanriel.com",
+    "rank": 7,
+    "date": "Aug 23, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/kareemblessed/inside-my-aiml-engineer-portfolio-315o",
+    "name": "Inside My AI/ML Engineer Portfolio",
+    "snippet": "The portfolio is built on a modern React stack. I used Vite for blazing-fast development and builds. Animation & Interaction Framer. Backend & ...",
+    "host_name": "dev.to",
+    "rank": 8,
+    "date": "Jan 28, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.figma.com/community/file/1532743725921446803/ai-engineer-portfolio-website",
+    "name": "AI Engineer Portfolio Website",
+    "snippet": "AI Engineer Portfolio Website | … coversSimple resume templatesFamily tree templatesProfessional resumesDesign illustrationsWeb design portfolios Recommended",
+    "host_name": "www.figma.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

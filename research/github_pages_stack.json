@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/webdev/comments/1i3101h/if_you_were_making_your_personal_site_from",
+    "name": "If you were making your personal site from scratch today",
+    "snippet": "A simple, mostly static site with a contact form and a blog section.\n\nWhen I made my site 10 years ago I hard coded everything, no libraries, nothing. Of ...",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://naturaily.com/blog/best-static-site-generators",
+    "name": "Best Static Site Generators in 2026: Top SSGs Compared",
+    "snippet": "Compare the best static site generators for 2026. See top picks for blogs, docs, and marketing sites (Astro, Next.js, Hugo, 11ty) + SEO checklist.",
+    "host_name": "naturaily.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://bugfender.com/blog/top-static-site-generators",
+    "name": "Top Static Site Generators for 2025",
+    "snippet": "Easily deploy your site to platforms like GitHub Pages, Netlify, or AWS S3 with built-in deployment commands.",
+    "host_name": "bugfender.com",
+    "rank": 2,
+    "date": "Jan 24, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/myles/awesome-static-generators",
+    "name": "Awesome Static Web Site Generators",
+    "snippet": "A curated list of static web site generators. NextJS - Publish flaring fast blogs with Next.js and Ghost. Astro - Framework agnostic static site generator. ...",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://cloudcannon.com/blog/the-top-five-static-site-generators-for-2025-and-when-to-use-them",
+    "name": "The top five static site generators for 2025 (and when to",
+    "snippet": "With Astro, you can build your site with your favorite JavaScript framework, but your finished site can be a zero-JavaScript static site. ( ...",
+    "host_name": "cloudcannon.com",
+    "rank": 4,
+    "date": "Dec 5, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/orgs/community/discussions/151800",
+    "name": "What Is the Best Way to Create a Website in 2024? #151800",
+    "snippet": "To deploy your static site, go to your GitHub repository, click on Settings, then Pages. Under \"Source,\" select the main branch and the /root or /docs folder",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://crystallize.com/blog/react-static-site-generators",
+    "name": "React-based Static Site Generators in 2025",
+    "snippet": "This post provides an in-depth look at six SSGs expected to shine: Next.js, Astro, We'll compare their key features, pros and cons, GitHub), ...",
+    "host_name": "crystallize.com",
+    "rank": 6,
+    "date": "Apr 1, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://staticmania.com/blog/static-site-generators",
+    "name": "Top Static Site Generators in 2025",
+    "snippet": "In this guide, we'll explore the 10+ top static site generators in 2025, covering their features, benefits, use cases, and drawbacks.",
+    "host_name": "staticmania.com",
+    "rank": 7,
+    "date": "Mar 21, 2022",
+    "favicon": ""
+  },
+  {
+    "url": "https://hygraph.com/blog/top-12-ssgs",
+    "name": "Our Top 12 picks for Static Site Generators (SSGs) in 2026",
+    "snippet": "Our top 12 Static Site Generator (SSG) Picks for 2026 · 1. Next.JS · 2. Hugo · 3. Astro · 4. Bridgetown · 5. 11ty · 6. SvelteKit · 7. Nuxt.JS · 8. Qwik.",
+    "host_name": "hygraph.com",
+    "rank": 8,
+    "date": "Jan 21, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.astro.build/en/guides/deploy/github",
+    "name": "Deploy your Astro Site to GitHub Pages | Docs",
+    "snippet": "You can use GitHub Pages to host a static, prerendered Astro website directly from a repository on GitHub.com using GitHub Actions.",
+    "host_name": "docs.astro.build",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]
