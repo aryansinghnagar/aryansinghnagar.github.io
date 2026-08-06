@@ -5,12 +5,11 @@ import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Send, Mail, MapPin, Phone, Github, Linkedin, Loader2, CheckCircle2 } from 'lucide-react';
+import { Send, Mail, MapPin, Phone, Github, Linkedin, Loader2, CheckCircle2, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { profile } from '@/lib/portfolio-data';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -36,26 +35,25 @@ export function Contact() {
   const onSubmit = async (data: ContactForm) => {
     setStatus('sending');
     try {
-      // Build a mailto: link as a no-backend fallback.
-      // To enable Formspree: replace this block with:
-      //   await fetch('https://formspree.io/f/YOUR_ID', {
-      //     method: 'POST', headers: { 'Content-Type': 'application/json' },
-      //     body: JSON.stringify(data),
-      //   });
-      const body = encodeURIComponent(
-        `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`
-      );
-      const subject = encodeURIComponent(data.subject);
-      const mailtoUrl = `mailto:${profile.email}?subject=${subject}&body=${body}`;
-      window.open(mailtoUrl, '_self');
+      const response = await fetch('https://formspree.io/f/mbgrjboo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-      await new Promise((resolve) => setTimeout(resolve, 800));
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
       setStatus('sent');
       reset();
-      setTimeout(() => setStatus('idle'), 4000);
-    } catch (err) {
+      setTimeout(() => setStatus('idle'), 5000);
+    } catch {
       setStatus('error');
-      setTimeout(() => setStatus('idle'), 4000);
+      setTimeout(() => setStatus('idle'), 5000);
     }
   };
 
@@ -208,21 +206,26 @@ export function Contact() {
               >
                 {status === 'sending' && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
                 {status === 'sent' && <CheckCircle2 className="h-4 w-4 mr-2" />}
+                {status === 'error' && <AlertCircle className="h-4 w-4 mr-2" />}
                 {status === 'sending'
-                  ? 'Opening mail client...'
+                  ? 'Sending message...'
                   : status === 'sent'
-                    ? 'Email drafted — check your mail client'
-                    : (
-                      <>
-                        <Send className="h-4 w-4 mr-2" />
-                        Send Message
-                      </>
-                    )}
+                    ? 'Message sent! I\'ll reply soon.'
+                    : status === 'error'
+                      ? 'Failed to send. Please try again.'
+                      : (
+                        <>
+                          <Send className="h-4 w-4 mr-2" />
+                          Send Message
+                        </>
+                      )}
               </Button>
 
               <p className="text-xs text-muted-foreground text-center pt-2">
-                Form opens your email client pre-filled. For direct Formspree integration, see the
-                deployment guide.
+                Submits directly to inbox. You can also email directly at{' '}
+                <a href="mailto:asn.dyrnwyn@gmail.com" className="text-neon hover:underline">
+                  asn.dyrnwyn@gmail.com
+                </a>
               </p>
             </form>
           </motion.div>
