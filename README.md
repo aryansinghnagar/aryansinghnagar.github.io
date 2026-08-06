@@ -209,9 +209,9 @@ To run the portfolio locally for testing or content edits:
 
 ```bash
 cd /path/to/portfolio
-bun install        # first time only
-bun run dev        # starts dev server on http://localhost:3000
-bun run lint       # check code quality
+npm install        # first time only
+npm run dev        # starts dev server on http://localhost:3000
+npm run lint       # check code quality
 ```
 
 ---

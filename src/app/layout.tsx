@@ -44,7 +44,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Aryan Singh Nagar" }],
   creator: "Aryan Singh Nagar",
   icons: {
-    icon: "/logo.svg",
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
   openGraph: {
     title: "Aryan Singh Nagar — Generative AI Engineer",
