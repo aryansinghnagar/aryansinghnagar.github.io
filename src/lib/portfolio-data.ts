@@ -9,7 +9,7 @@ export const profile = {
   tagline: "AI/ML & Systems Engineer · Full-Stack Developer",
   subTagline: "IIT Bombay EE '25 · JEE Adv AIR 413 · Immediate Joiner",
   location: "India (Open to Relocation)",
-  email: "asn.dyrnwyn@gmail.com",
+  email: "auricwings13@gmail.com",
   phone: "+91 782-775-6669",
   resumeUrl: "/assets/Aryan_Singh_Nagar_Resume.pdf",
   headshot: "/assets/headshot.jpg",
@@ -28,7 +28,7 @@ export const socials = [
     href: "https://www.linkedin.com/in/aryan-singh-nagar-414675263",
     icon: "linkedin",
   },
-  { name: "Email", href: "mailto:asn.dyrnwyn@gmail.com", icon: "mail" },
+  { name: "Email", href: "mailto:auricwings13@gmail.com", icon: "mail" },
   { name: "Resume", href: "/assets/Aryan_Singh_Nagar_Resume.pdf", icon: "file" },
 ];
 

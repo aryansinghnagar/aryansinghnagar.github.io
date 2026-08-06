@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import { profile } from '@/lib/portfolio-data';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -94,8 +95,8 @@ export function Contact() {
             <ContactRow
               icon={Mail}
               label="Email"
-              value="asn.dyrnwyn@gmail.com"
-              href="mailto:asn.dyrnwyn@gmail.com"
+              value={profile.email}
+              href={`mailto:${profile.email}`}
             />
             <ContactRow
               icon={Phone}
@@ -223,8 +224,8 @@ export function Contact() {
 
               <p className="text-xs text-muted-foreground text-center pt-2">
                 Submits directly to inbox. You can also email directly at{' '}
-                <a href="mailto:asn.dyrnwyn@gmail.com" className="text-neon hover:underline">
-                  asn.dyrnwyn@gmail.com
+                <a href={`mailto:${profile.email}`} className="text-neon hover:underline">
+                  {profile.email}
                 </a>
               </p>
             </form>

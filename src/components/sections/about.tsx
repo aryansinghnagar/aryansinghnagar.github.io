@@ -67,7 +67,7 @@ export function About() {
             {/* Quick facts */}
             <div className="grid sm:grid-cols-2 gap-3 pt-4">
               <FactRow icon={MapPin} label="Location" value={profile.location} />
-              <FactRow icon={Mail} label="Email" value="asn.dyrnwyn@gmail.com" />
+              <FactRow icon={Mail} label="Email" value={profile.email} />
               <FactRow icon={Phone} label="Phone" value={profile.phone} />
               <FactRow icon={GraduationCap} label="Education" value="IIT Bombay EE '25" />
             </div>

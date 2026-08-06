@@ -96,7 +96,7 @@ export default function RootLayout({
               name: "Aryan Singh Nagar",
               alternateName: "SilverFox",
               jobTitle: "Generative AI Engineer",
-              email: "asn.dyrnwyn@gmail.com",
+              email: "auricwings13@gmail.com",
               url: "https://aryansinghnagar.github.io",
               sameAs: [
                 "https://www.linkedin.com/in/aryan-singh-nagar-414675263",

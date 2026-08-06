@@ -78,7 +78,7 @@ The contact form currently opens the user's email client (mailto:). To enable se
 
 ### 1. Create a Formspree endpoint
 - Go to: **https://formspree.io**
-- Sign up with `asn.dyrnwyn@gmail.com`
+- Sign up with `auricwings13@gmail.com`
 - Click **New Form** → name it "Portfolio Contact"
 - Copy the form ID (looks like `xayznvqe`)
 
@@ -121,7 +121,7 @@ git push
 
 ### 4. Verify
 - Submit a test message through the form
-- Check your `asn.dyrnwyn@gmail.com` inbox — Formspree will forward the message
+- Check your `auricwings13@gmail.com` inbox — Formspree will forward the message
 - Confirm submissions appear in your Formspree dashboard
 
 ---
