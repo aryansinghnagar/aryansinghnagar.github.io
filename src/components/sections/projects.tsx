@@ -64,7 +64,7 @@ export function Projects() {
                         </p>
                       </div>
                     </div>
-                    {project.links[0]?.href.startsWith('http') && (
+                    {Boolean(project.links[0]?.href?.startsWith('http')) && (
                       <ArrowUpRight className="h-5 w-5 text-muted-foreground group-hover:text-neon group-hover:rotate-12 transition-all shrink-0" />
                     )}
                   </div>

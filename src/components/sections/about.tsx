@@ -46,14 +46,12 @@ export function About() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              My recent work spans <span className="text-foreground">agentic LLM operating systems</span>{' '}
-              (JoBot — multi-provider routing across Gemini, OpenAI, Anthropic, Ollama),{' '}
-              <span className="text-foreground">multimodal engagement classifiers</span> at NimitAI
-              (fusing facial expressions, speech cues, and acoustic features),{' '}
-              <span className="text-foreground">cross-platform computer vision</span> (Maestro —
-              ONNX Runtime with multi-backend GPU acceleration), and{' '}
-              <span className="text-foreground">post-quantum cryptography</span> (AnonyMus —
-              ML-KEM-768 with double-ratcheted E2EE).
+              My recent engineering spans <span className="text-foreground">agentic LLM operating systems</span>{' '}
+              (JoBot — SQLite WAL task engine, Candidate Truth Store, multi-provider routing),{' '}
+              <span className="text-foreground">low-latency edge computer vision</span> (Maestro —
+              ONNX Runtime multi-GPU acceleration with sub-15ms latency), and{' '}
+              <span className="text-foreground">post-quantum P2P communications</span> (AnonyMus v3.0 —
+              Rust/FastAPI hybrid core, ML-KEM-768, and Tor v3 Onion routing).
             </p>
 
             {/* Pull quote */}
