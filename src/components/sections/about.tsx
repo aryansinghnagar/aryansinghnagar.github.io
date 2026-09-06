@@ -53,7 +53,7 @@ export function About() {
               <span className="text-foreground">applied post-quantum security</span> (AnonyMus v3.0 —
               Rust/FastAPI core, ML-KEM-768, Tor v3 Onion transport), and{' '}
               <span className="text-foreground">custom OS environments</span> (Ars Arcanum &amp; Scriptorium —
-              Debian minimal live-build appliance with AppArmor MAC sandboxing and reproducible publishing toolchains).
+              Debian minimal live-build environments with AppArmor MAC sandboxing and reproducible publishing toolchains).
             </p>
 
             <p className="text-muted-foreground leading-relaxed">

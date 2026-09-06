@@ -80,7 +80,7 @@ export function Projects() {
               >
                 <span>{category}</span>
                 <span
-                  className={`text-[10px] px-1.5 py-0.2 rounded-full ${
+                  className={`text-[10px] px-1.5 py-0.5 rounded-full ${
                     isSelected
                       ? 'bg-neon/20 text-neon'
                       : 'bg-background/80 text-muted-foreground'

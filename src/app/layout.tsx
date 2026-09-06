@@ -25,19 +25,19 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aryan Singh Nagar — Generative AI Engineer · ML Engineer · Full-Stack Developer",
+  title: "Aryan Singh Nagar — AI/ML & Systems Engineer",
   description:
-    "IIT Bombay EE '25 graduate (JEE Adv AIR 413) specializing in Generative AI, ML engineering, and full-stack development. Shipped production ML systems, cut token costs by 60%, reduced dev timelines by 85%.",
+    "IIT Bombay EE '25 graduate (JEE Adv AIR 413) engineering agentic LLM infrastructure, low-latency computer vision, and privacy-preserving systems. Shipped multimodal ML pipelines (35+ FPS), microservices (1,000+ QPS), and post-quantum protocols.",
   keywords: [
     "Aryan Singh Nagar",
     "SilverFox",
-    "Generative AI Engineer",
-    "ML Engineer",
+    "AI/ML Engineer",
+    "Systems Engineer",
+    "Agentic AI",
     "LLM Engineer",
-    "Full-Stack Developer",
+    "Computer Vision",
+    "Post-Quantum Cryptography",
     "IIT Bombay",
-    "AI/ML",
-    "Data Scientist",
     "Software Engineer",
     "Portfolio",
   ],
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     apple: "/logo.svg",
   },
   openGraph: {
-    title: "Aryan Singh Nagar — Generative AI Engineer",
+    title: "Aryan Singh Nagar — AI/ML & Systems Engineer",
     description:
-      "IIT Bombay '25 · JEE Adv AIR 413 · Generative AI / ML / Full-Stack. Shipped production ML systems, cut token costs 60%, reduced dev timelines 85%.",
+      "IIT Bombay '25 · JEE Adv AIR 413 · Agentic LLM Infrastructure · Low-Latency Vision · Systems Security",
     url: "https://aryansinghnagar.github.io",
     siteName: "Aryan Singh Nagar",
     type: "profile",
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aryan Singh Nagar — Generative AI Engineer",
+    title: "Aryan Singh Nagar — AI/ML & Systems Engineer",
     description:
-      "IIT Bombay '25 · JEE Adv AIR 413 · Generative AI / ML / Full-Stack Developer",
+      "IIT Bombay '25 · JEE Adv AIR 413 · Agentic LLM Infrastructure · Low-Latency Vision · Systems Security",
   },
   robots: {
     index: true,
@@ -95,7 +95,7 @@ export default function RootLayout({
               "@type": "Person",
               name: "Aryan Singh Nagar",
               alternateName: "SilverFox",
-              jobTitle: "Generative AI Engineer",
+              jobTitle: "AI/ML & Systems Engineer",
               email: "auricwings13@gmail.com",
               url: "https://aryansinghnagar.github.io",
               sameAs: [

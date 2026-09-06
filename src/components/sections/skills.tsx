@@ -7,7 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 const categoryIcons: Record<string, string> = {
   'Languages & Core Systems': '{ }',
   'ML & Computer Vision': '◎',
-  'AI Systems & Data Engineering': '∑',
+  'AI Systems & Agentic Infrastructure': '∑',
   'Foundations & Security': '◆',
 };
 
