@@ -46,12 +46,18 @@ export function About() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              My recent engineering spans <span className="text-foreground">agentic LLM operating systems</span>{' '}
-              (JoBot — SQLite WAL task engine, Candidate Truth Store, multi-provider routing),{' '}
+              My engineering work spans <span className="text-foreground">agentic LLM systems &amp; devtools</span>{' '}
+              (JoBot — SQLite WAL task engine, Candidate Truth Store, multi-provider routing; PReviewBot — AST-aware PR review engine with bounded concurrency),{' '}
               <span className="text-foreground">low-latency edge computer vision</span> (Maestro —
-              ONNX Runtime multi-GPU acceleration with sub-15ms latency), and{' '}
-              <span className="text-foreground">post-quantum P2P communications</span> (AnonyMus v3.0 —
-              Rust/FastAPI hybrid core, ML-KEM-768, and Tor v3 Onion routing).
+              ONNX Runtime multi-backend acceleration with sub-15ms latency),{' '}
+              <span className="text-foreground">applied post-quantum security</span> (AnonyMus v3.0 —
+              Rust/FastAPI core, ML-KEM-768, Tor v3 Onion transport), and{' '}
+              <span className="text-foreground">custom OS environments</span> (Ars Arcanum &amp; Scriptorium —
+              Debian minimal live-build appliance with AppArmor MAC sandboxing and reproducible publishing toolchains).
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              I embrace the challenge of uncharted technical domains—whether implementing nascent post-quantum cryptographic primitives, engineering syntax-aware compiler tools, or building hardened Linux appliances. I pair this willingness to take calculated architectural bets with a disciplined defensive mindset: deterministic schema validation, comprehensive test coverage, and human-first ethical boundaries. I am eager to bring this versatility, curiosity, and rapid execution speed to forward-thinking engineering teams building consequential software.
             </p>
 
             {/* Pull quote */}

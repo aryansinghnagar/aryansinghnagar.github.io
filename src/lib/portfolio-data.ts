@@ -6,8 +6,8 @@
 export const profile = {
   name: "Aryan Singh Nagar",
   handle: "SilverFox",
-  tagline: "AI/ML & Systems Engineer · Full-Stack Developer",
-  subTagline: "IIT Bombay EE '25 · JEE Adv AIR 413 · Immediate Joiner",
+  tagline: "AI/ML & Systems Engineer · Agentic Architecture & Applied Systems",
+  subTagline: "IIT Bombay EE '25 · JEE Adv AIR 413 · Ready to Contribute",
   location: "India (Open to Relocation)",
   email: "auricwings13@gmail.com",
   phone: "+91 782-775-6669",
@@ -16,9 +16,9 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/aryan-singh-nagar-414675263",
   github: "https://github.com/aryansinghnagar",
   summary:
-    "IIT Bombay Electrical Engineering graduate (B.Tech, 2019–2025) specializing in low-latency computer vision, agentic LLM infrastructure, and privacy-preserving distributed systems. Architected real-time multimodal ML pipelines operating at 35+ FPS with sub-40ms latency, high-throughput forecasting microservices serving 1,000+ QPS, and post-quantum hybrid cryptographic systems.",
+    "IIT Bombay Electrical Engineering graduate (B.Tech, 2019–2025) engineering at the intersection of agentic LLM infrastructure, low-latency computer vision, and privacy-preserving distributed systems. Experienced in architecting real-time multimodal ML pipelines (35+ FPS, <40ms latency), high-throughput forecasting microservices (1,000+ QPS), syntax-aware AST review engines, and post-quantum hybrid cryptographic protocols. Driven by rapid experimentation, deep systems curiosity, and a commitment to delivering resilient software to production.",
   philosophy:
-    "I build AI & systems that ship — not demos. Optimizing for latency (ms), frame throughput (FPS), memory footprint (VRAM), and fault tolerance from bare-metal edge devices to distributed cloud backends.",
+    "I thrive on exploring emerging technical paradigms and turning them into reliable systems that ship. From AST diff parsing and post-quantum lattices to bare-metal OS appliances, I combine a willingness to experiment with disciplined engineering—optimizing for latency, correctness, software ethics, and operational resilience.",
 };
 
 export const socials = [
@@ -48,13 +48,14 @@ export const skills = [
       "C++",
       "TypeScript",
       "FastAPI",
-      "Tauri",
+      "Tauri v2",
       "React",
       "Next.js",
       "Node.js",
       "Docker",
       "Git",
-      "Linux",
+      "Linux (Debian/Mint)",
+      "Bash / POSIX Shell",
       "SQL",
       "Tailwind CSS",
     ],
@@ -75,13 +76,15 @@ export const skills = [
     ],
   },
   {
-    category: "AI Systems & Data Engineering",
+    category: "AI Systems & Agentic Infrastructure",
     items: [
-      "LLM Routing",
+      "AST Parsing & Diff Analysis",
+      "Tree-sitter Grammars",
+      "LLM ModelRouter",
       "Few-Shot RAG",
       "Semantic Caching",
       "Pydantic V2",
-      "Patchright",
+      "Patchright Automation",
       "ChromaDB / Vector DBs",
       "Prompt Injection Guard",
       "Candidate Truth Verification",
@@ -99,13 +102,15 @@ export const skills = [
       "Post-Quantum Cryptography (ML-KEM-768)",
       "Double Ratchet",
       "Tor v3 Onion P2P",
+      "AppArmor MAC Confinement",
+      "LUKS2 Disk Encryption",
       "TUF Auto-Updates",
-      "SQLite WAL Leases",
+      "SQLite WAL Idempotency",
       "Zero-Knowledge Identity",
       "System Design",
       "Concurrency",
       "Data Structures & Algorithms",
-      "REST APIs",
+      "REST APIs & Webhooks",
       "Microservices",
     ],
   },
@@ -149,16 +154,22 @@ export const experiences: Experience[] = [
   },
 ];
 
+export interface ProjectRoadmap {
+  challenge: string;
+  plan: string;
+}
+
 export interface Project {
   slug: string;
   title: string;
   hook: string;
-  category: "Generative AI" | "ML / CV" | "Security" | "Data Science";
+  category: "Generative AI & Agents" | "Systems & Security" | "ML / CV" | "Data Science";
   year: string;
   tech: string[];
   metrics?: { label: string; value: string }[];
   description: string;
   highlights: string[];
+  roadmap?: ProjectRoadmap;
   links: { label: string; href: string; primary?: boolean }[];
   featured: boolean;
 }
@@ -167,8 +178,8 @@ export const projects: Project[] = [
   {
     slug: "jobot",
     title: "JoBot",
-    hook: "Autonomous Job Application Operating System — local-first agentic OS with multi-provider routing & verifiable grounding.",
-    category: "Generative AI",
+    hook: "Autonomous Job Application Operating System — local-first agentic OS with multi-provider routing, durable state machines & verifiable grounding.",
+    category: "Generative AI & Agents",
     year: "2026",
     tech: ["Python 3.11+", "Tauri v2", "React", "Pydantic V2", "SQLite WAL", "Fernet", "Patchright", "ModelRouter", "Prompt Guard"],
     metrics: [
@@ -177,23 +188,57 @@ export const projects: Project[] = [
       { label: "ATS Tiers", value: "4 Levels" },
     ],
     description:
-      "JoBot is an agentic job application platform built under a strict local-first, privacy-preserving doctrine. It features a multi-provider ModelRouter (12+ LLM backends), a candidate truth store with hallucination verification, SSRF and prompt injection defenses, and a durable SQLite WAL task engine paired with a Tauri v2 desktop cockpit.",
+      "JoBot is an autonomous application platform engineered around a strict local-first, privacy-preserving doctrine. It combines a multi-provider ModelRouter (12+ LLM backends), a Candidate Truth Store with factual grounding verification to prevent hallucinated qualifications, prompt injection defenses, and a durable SQLite WAL task engine with pre-reserved idempotency keys paired with a Tauri v2 desktop cockpit.",
     highlights: [
-      "Durable SQLite WAL task engine with pre-reserved idempotency keys and verify-only reconciliation",
+      "Durable SQLite WAL task engine with pre-reserved idempotency keys and verify-only state reconciliation",
       "Candidate Truth Store & Grounding Verifier ensuring AI-generated applications strictly match verified candidate facts",
+      "Human Approval Inbox gating external network actions behind explicit human approval before execution",
       "Multi-tier submission engine: Direct HTTP API (Greenhouse, Lever) and stealth Patchright browser automation (Workday, LinkedIn, Naukri)",
-      "Prompt injection defense (prompt_guard) and SSRF protection (url_guard) with zero external telemetry",
-      "Tauri v2 + React desktop cockpit communicating via high-speed JSON-RPC 2.0 sidecar with human approval gates",
+      "Zero-telemetry local vault with Fernet encryption and OS keyring integration (0600 permissions)",
     ],
+    roadmap: {
+      challenge: "Dynamic anti-bot heuristics and continuous ATS form schema drift across enterprise job portals.",
+      plan: "Implementing self-healing multi-modal vision-agent fallbacks and automated schema-drift adaptation to reliably handle unexpected form alterations without brittle selectors.",
+    },
     links: [
       { label: "View Code", href: "https://github.com/aryansinghnagar/JoBot", primary: true },
     ],
     featured: true,
   },
   {
+    slug: "previewbot",
+    title: "PReviewBot",
+    hook: "AST-Aware Automated PR Review Bot — syntax-informed code review service with bounded concurrency and strict schema validation.",
+    category: "Generative AI & Agents",
+    year: "2026",
+    tech: ["Python 3.10+", "FastAPI", "Python AST", "Unified Diff Parser", "Asyncio Semaphore", "Pydantic V2", "GitHub REST Reviews API", "Docker"],
+    metrics: [
+      { label: "Parsing", value: "AST Scope" },
+      { label: "Validation", value: "Pydantic V2" },
+      { label: "Safety", value: "Zero 422s" },
+    ],
+    description:
+      "PReviewBot is an asynchronous FastAPI service that receives GitHub webhook events, parses unified git diff hunks, and uses Python's standard library abstract syntax tree (ast) module to identify enclosing function and method boundaries. By analyzing semantic code scopes instead of raw isolated diff lines, it performs targeted LLM code reviews with bounded concurrency and posts batched inline comments.",
+    highlights: [
+      "Deterministic AST traversal extracting innermost function/method scopes for context-rich review prompts",
+      "Cost-funnel pipeline filtering non-code files, lockfiles, and generated assets before triggering LLM calls",
+      "Strict line-whitelisting mechanism preventing comment line hallucinations and eliminating GitHub 422 Unprocessable Entity errors",
+      "Bounded concurrency architecture utilizing asyncio.Semaphore to respect LLM rate limits",
+      "Dockerized microservice deployment with constant-time HMAC signature verification for secure webhook ingestion",
+    ],
+    roadmap: {
+      challenge: "Polyglot language boundary extraction beyond Python and persistent review job state across ephemeral container lifecycles.",
+      plan: "Integrating Tree-sitter for multi-language AST grammars alongside an asynchronous Redis/ARQ durable task queue for fault-tolerant background review execution.",
+    },
+    links: [
+      { label: "View Code", href: "https://github.com/aryansinghnagar/PReviewBot", primary: true },
+    ],
+    featured: true,
+  },
+  {
     slug: "maestro",
     title: "Maestro",
-    hook: "Cross-platform desktop hand-gesture controller — control your computer via webcam with sub-15ms latency.",
+    hook: "Cross-platform desktop hand-gesture controller — low-overhead computer vision interface operating with sub-15ms latency.",
     category: "ML / CV",
     year: "2025–2026",
     tech: ["Python 3.11+", "ONNX Runtime", "MediaPipe", "PyQt6", "CUDA", "TensorRT", "CoreML", "DirectML", "Vosk", "Pluggy", "TUF"],
@@ -203,14 +248,18 @@ export const projects: Project[] = [
       { label: "Tracking", value: "21-point" },
     ],
     description:
-      "Maestro is a privacy-first desktop controller that translates webcam-captured hand gestures into OS-level input events. Powered by ONNX Runtime with multi-backend GPU acceleration (CUDA / CoreML / TensorRT / DirectML), PyQt6 GUI, offline Vosk voice control, and a pluggy-based plugin architecture.",
+      "Maestro is a privacy-first desktop controller that translates webcam-captured hand gestures into OS-level input events. Engineered with ONNX Runtime across multi-backend GPU acceleration (CUDA, CoreML, TensorRT, DirectML), it features an adaptive performance state machine (T0–T3), privilege-separated input injection, and offline speech recognition.",
     highlights: [
-      "Adaptive Performance Tiers (T0–T3): zero-config dynamic scaling from Ultra (60 FPS, FP16) to Minimal (10 FPS, INT8) based on thermal & battery state",
+      "Adaptive Performance Tiers (T0–T3): dynamic scaling from Ultra (60 FPS, FP16) to Minimal (10 FPS, INT8) based on thermal and battery state",
       "Cross-platform native input injection: Windows (SendInput & SID token isolation), Linux (uinput/evdev), macOS (CGEvent/Quartz)",
-      "FSM gesture recognizer with Dynamic Time Warping (DTW) and context-aware trigger conditions DSL",
-      "Privilege-separated input broker with Win32 process token SID auth and rate-limited audit logs",
-      "TUF-signed auto-updates (threshold=3) and completely on-device offline processing with zero network egress",
+      "Finite-State Machine (FSM) gesture recognizer with Dynamic Time Warping (DTW) and context-aware trigger conditions",
+      "Privilege-separated input broker with Win32 process token SID authentication and rate-limited audit logs",
+      "TUF-signed auto-updates and completely on-device edge processing with zero network egress or frame persistence",
     ],
+    roadmap: {
+      challenge: "Environmental lighting variability and keypoint jitter when operating within low-power edge CPU budgets.",
+      plan: "Integrating temporal Kalman filtering and adaptive keypoint smoothing to maintain rock-solid gesture tracking under low-light or noisy webcam sensors.",
+    },
     links: [
       { label: "View Code", href: "https://github.com/aryansinghnagar/Maestro", primary: true },
       { label: "Documentation", href: "https://aryansinghnagar.github.io/Maestro/" },
@@ -219,9 +268,9 @@ export const projects: Project[] = [
   },
   {
     slug: "anonymus",
-    title: "AnonyMus",
-    hook: "Decentralized, post-quantum resilient, metadata-resistant instant messaging suite.",
-    category: "Security",
+    title: "AnonyMus v3.0",
+    hook: "Decentralized, post-quantum resilient, metadata-resistant private communications suite.",
+    category: "Systems & Security",
     year: "2026",
     tech: ["Python 3.11+", "Rust (PyO3)", "FastAPI v3", "ML-KEM-768", "Double Ratchet", "Tor v3 Onion", "Tauri / Solid.js", "Argon2id", "AES-256-GCM"],
     metrics: [
@@ -230,16 +279,80 @@ export const projects: Project[] = [
       { label: "Core Speed", value: "Rust PyO3" },
     ],
     description:
-      "AnonyMus v3.0 is a privacy-first communications platform combining NIST FIPS 203 ML-KEM-768 post-quantum key encapsulation with Signal-grade Double Ratchet encryption. It runs over direct Tor v3 Onion P2P transports with a high-performance Rust cryptographic core, FastAPI v3 ASGI backend, and Solid.js/Tauri desktop interface.",
+      "AnonyMus is an open-source communications suite designed to protect user identity and message content against traffic analysis and quantum cryptanalysis. It pairs NIST FIPS 203 ML-KEM-768 post-quantum key encapsulation with Signal-grade Double Ratchet forward secrecy over direct Tor v3 Onion P2P transports, backed by a high-performance Rust cryptographic core.",
     highlights: [
       "Post-quantum hybrid KEM: NIST FIPS 203 ML-KEM-768 (Kyber768) + X25519 combined via HKDF-SHA256",
       "Signal-grade Double Ratchet with per-message symmetric ratchets and break-in recovery",
       "Zero-central-server Tor v3 Onion P2P routing — cryptographic onion addresses serve as sovereign identities",
       "Multi-device LAN sync with 6-digit SAS PIN verification and replay-resistant sequence tracking",
-      "Bounded Encrypted File Transfer (XFTP) with 10MB chunking and duress PIN database shredding",
+      "SQLCipher at-rest storage with Argon2id derivation and duress PIN panic shredding",
     ],
+    roadmap: {
+      challenge: "Asynchronous offline message delivery and rendezvous discovery latency inherent to decentralized, peer-to-peer onion networks.",
+      plan: "Exploring zero-knowledge blind relay mailboxes and ephemeral post-quantum rendezvous tokens to facilitate seamless asynchronous message delivery without centralized metadata leaks.",
+    },
     links: [
       { label: "View Code", href: "https://github.com/aryansinghnagar/AnonyMus", primary: true },
+    ],
+    featured: true,
+  },
+  {
+    slug: "ars-arcanum",
+    title: "Ars Arcanum",
+    hook: "The Writer's Forge — dedicated, distraction-free Linux workstation OS & tool suite for long-form worldbuilding and typesetting.",
+    category: "Systems & Security",
+    year: "2026",
+    tech: ["Debian GNU/Linux 13", "live-build", "AppArmor MAC", "LUKS2 (Argon2id)", "nftables", "Python / POSIX", "Typst", "Pandoc", "Calamares", "XFCE / Labwc"],
+    metrics: [
+      { label: "Base OS", value: "Debian 13" },
+      { label: "Security", value: "AppArmor MAC" },
+      { label: "Typesetting", value: "Sub-Second" },
+    ],
+    description:
+      "Ars Arcanum is a custom, purpose-built Linux workstation OS appliance engineered from Debian Minimal for deep creative prose composition and speculative worldbuilding. It eliminates distraction by construction at the package manifest level, while providing vault-grade data encryption, AppArmor process sandboxing, and an automated publishing compilation toolchain.",
+    highlights: [
+      "Live-build Debian 13 appliance with Calamares graphical installer and automated LUKS2 full-disk encryption",
+      "Distraction elimination by construction: structural omission of web browsers and telemetry at the package level",
+      "Hardened security posture: AppArmor MAC profiles (deny network, sandboxed paths), nftables firewall, and sysctl kernel hardening",
+      "Modular Python & POSIX authoring suite (ars-*) including lore parsing, continuity linting, and automated git versioning",
+      "Sub-second vector publication compilation pipelines powering print-ready PDF (Typst) and distribution EPUBs (Pandoc)",
+    ],
+    roadmap: {
+      challenge: "Multi-architecture ISO build reproducibility and declarative sandbox profile portability across diverging upstream Linux kernel releases.",
+      plan: "Transitioning root filesystem composition to reproducible OCI container layers paired with declarative Bubblewrap/AppArmor unified sandboxing abstractions.",
+    },
+    links: [
+      { label: "View Code", href: "https://github.com/aryansinghnagar/Ars_Arcanum", primary: true },
+    ],
+    featured: true,
+  },
+  {
+    slug: "scriptorium",
+    title: "Scriptorium",
+    hook: "Accessible Linux authoring environment & automated book publishing toolchain for novelists and worldbuilders.",
+    category: "Systems & Security",
+    year: "2026",
+    tech: ["Linux Mint / Debian", "Bash Automation", "novelWriter", "Obsidian Vaults", "Typst", "Pandoc", "LeechBlock", "Déjà Dup", "LUKS"],
+    metrics: [
+      { label: "Data Format", value: "Open Markdown" },
+      { label: "Compiles", value: "PDF & EPUB" },
+      { label: "Safety", value: "3-2-1 Backups" },
+    ],
+    description:
+      "Scriptorium is a low-effort, open-format writing ecosystem designed for authors on Linux Mint and Debian. It combines modular Obsidian lore bibles with novelWriter manuscript outlining and a single-click desktop publishing pipeline that compiles publication-grade vector PDFs (Typst) and digital EPUBs (Pandoc) with zero terminal friction.",
+    highlights: [
+      "Automated single-script provisioning installing full writing stack, literary typography fonts, and desktop launchers",
+      "Single-click desktop compilation exporting print-ready PDFs with trade margins, alternating headers, and front matter",
+      "Structured Obsidian World-Bible schema featuring Dataview relationship mapping for character, faction, and timeline tracking",
+      "Distraction enforcement through configured browser focus schedules and OS notification muting",
+      "3-2-1 data safety doctrine combining local Git snapshots, LUKS encryption, and automated password-protected off-site backups",
+    ],
+    roadmap: {
+      challenge: "Bidirectional metadata synchronization and conflict resolution across disparate editor formats without semantic loss.",
+      plan: "Architecting a lightweight semantic document-state linter to automatically harmonize cross-file character references and timeline chronology across chapters.",
+    },
+    links: [
+      { label: "View Code", href: "https://github.com/aryansinghnagar/Scriptorium", primary: true },
     ],
     featured: true,
   },
@@ -263,6 +376,10 @@ export const projects: Project[] = [
       "Iterative model refinement pipeline with cross-validation and probability calibration",
       "End-to-end reproducible workflow from raw data to forecasted probabilities",
     ],
+    roadmap: {
+      challenge: "Handling real-time orbital telemetry distribution shifts and sparse sensor readings in launch environments.",
+      plan: "Incorporating streaming feature-drift detection and Bayesian uncertainty estimation to quantify prediction confidence on novel rocket configurations.",
+    },
     links: [],
     featured: true,
   },
@@ -279,13 +396,17 @@ export const projects: Project[] = [
       { label: "Setting", value: "IIT Bombay" },
     ],
     description:
-      "A supervised research exposition project developed in a collaborative research environment spanning multiple academic tiers. Built affordable, contactless biometric verification prototypes and conducted an in-depth feasibility study and benchmarking of emerging contactless biometric techniques.",
+      "A supervised research exposition project developed in a collaborative research environment spanning multiple academic tiers at IIT Bombay. Built affordable, contactless biometric verification prototypes and conducted an in-depth feasibility study and benchmarking of emerging contactless biometric techniques.",
     highlights: [
       "Developed affordable contactless biometric verification prototypes suitable for low-resource deployments",
       "Conducted in-depth feasibility study benchmarking emerging contactless biometric techniques",
       "Findings informed downstream R&D direction and prototype iteration",
       "Collaborative research environment spanning multiple academic tiers at IIT Bombay",
     ],
+    roadmap: {
+      challenge: "Subject motion blur and off-axis perspective distortion on cost-constrained optical sensors.",
+      plan: "Implementing edge-optimized super-resolution deblurring models and pose-invariant affine normalization transforms.",
+    },
     links: [],
     featured: true,
   },

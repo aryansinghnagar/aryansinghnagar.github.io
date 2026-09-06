@@ -77,9 +77,9 @@ export function Contact() {
           </h2>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-neon to-transparent mx-auto" />
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Open to AI Systems Engineering, Core ML Infrastructure, and High-Throughput Software
-            Engineering roles at Tier-1 tech companies and frontier AI research labs. Available
-            immediately, open to relocation.
+            Open to AI Systems Engineering, Applied ML Infrastructure, and High-Reliability Software
+            Engineering roles. Eager to contribute rapid experimentation, systems rigor, and end-to-end
+            ownership to high-impact teams. Available immediately, open to relocation.
           </p>
         </motion.div>
 
