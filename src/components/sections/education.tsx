@@ -74,26 +74,11 @@ export function Education() {
                 >
                   <Card className="h-full bg-card/40 border-border/50 hover:border-neon/40 transition-all">
                     <CardContent className="p-5">
-                      <div className="flex items-baseline justify-between mb-1">
+                      <div className="flex items-baseline justify-between gap-2 mb-1">
                         <h4 className="font-semibold text-foreground text-sm">{cert.title}</h4>
                         <span className="font-mono text-xs text-neon">{cert.year}</span>
                       </div>
-                      <p className="text-sm text-platinum font-medium mb-3">{cert.issuer}</p>
-                      <div className="flex flex-wrap gap-1">
-                        {cert.topics.slice(0, 6).map((topic) => (
-                          <span
-                            key={topic}
-                            className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono text-muted-foreground bg-background/50 border border-border/30"
-                          >
-                            {topic}
-                          </span>
-                        ))}
-                        {cert.topics.length > 6 && (
-                          <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono text-muted-foreground">
-                            +{cert.topics.length - 6} more
-                          </span>
-                        )}
-                      </div>
+                      <p className="text-xs font-mono text-muted-foreground">{cert.issuer}</p>
                     </CardContent>
                   </Card>
                 </motion.div>

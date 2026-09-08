@@ -5,8 +5,8 @@
 
 export const profile = {
   name: "Aryan Singh Nagar",
-  tagline: "AI/ML & Systems Engineer · IIT Bombay Electrical Engineering '25",
-  subTagline: "B.Tech in Electrical Engineering, IIT Bombay · JEE Advanced AIR 413",
+  tagline: "AI-Native Developer · IIT Bombay Electrical Engineering '25",
+  subTagline: "Building production AI agents and intelligent applications with low-level execution rigor.",
   location: "India (Open to Relocation)",
   email: "auricwings13@gmail.com",
   phone: "+91 782-775-6669",
@@ -15,9 +15,9 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/aryan-singh-nagar-414675263",
   github: "https://github.com/aryansinghnagar",
   summary:
-    "Electrical Engineering graduate from the Indian Institute of Technology, Bombay (B.Tech, 2019–2025) with a strong foundation in computing systems, machine learning, and applied mathematics. Experienced in developing exploratory implementations across AI/ML pipelines, low-latency computing, and systems software. Demonstrates high analytical rigor, rapid technical comprehension, and a disciplined approach to building reliable, high-performance software.",
+    "Electrical Engineering graduate from IIT Bombay (B.Tech, 2019–2025) building intelligent, AI-native applications and robust software architectures. Pairs modern LLM orchestration and agentic workflows with deep intuition for runtime performance, memory constraints, and low-latency execution. Demonstrates high analytical rigor, rapid technical comprehension, and a disciplined first-principles approach to software engineering.",
   philosophy:
-    "I approach engineering challenges through first-principles analysis and disciplined implementation. Grounded in a strong mathematical and systems foundation, I focus on understanding core abstractions, optimizing efficiency, and writing clean, maintainable code.",
+    "I build AI-native software from first principles—treating models not as black boxes, but as compute-intensive workloads that demand memory efficiency, predictable latency, and clean architectural abstractions.",
 };
 
 export const socials = [
@@ -28,7 +28,6 @@ export const socials = [
     icon: "linkedin",
   },
   { name: "Email", href: "mailto:auricwings13@gmail.com", icon: "mail" },
-  { name: "Resume", href: "/assets/Aryan_Singh_Nagar_Resume.pdf", icon: "file" },
 ];
 
 export const stats = [
@@ -40,66 +39,47 @@ export const stats = [
 
 export const skills = [
   {
-    category: "Programming Languages & Core Systems",
+    category: "AI & Agentic Systems",
+    items: [
+      "LLM Orchestration & Multi-Agent Workflows",
+      "Retrieval-Augmented Generation (RAG)",
+      "Vector Databases & Embeddings",
+      "Model Fine-Tuning & Serving",
+      "PyTorch",
+      "Prompt Engineering & Evals",
+    ],
+  },
+  {
+    category: "Languages & Core Tooling",
     items: [
       "Python",
+      "TypeScript",
       "C++",
       "Rust",
-      "TypeScript",
-      "C",
-      "FastAPI",
-      "React",
-      "Next.js",
-      "Node.js",
-      "Docker",
-      "Git",
-      "Linux (Debian/Ubuntu)",
-      "Bash / POSIX Shell",
       "SQL",
+      "Git",
+    ],
+  },
+  {
+    category: "Application & Product Stack",
+    items: [
+      "Next.js & React",
+      "FastAPI",
+      "Docker & Containerization",
+      "Node.js",
+      "RESTful APIs & Webhooks",
       "Tailwind CSS",
     ],
   },
   {
-    category: "Machine Learning & Computer Vision",
+    category: "Systems & Performance Foundations",
     items: [
-      "PyTorch",
-      "TensorFlow",
-      "ONNX Runtime",
-      "OpenCV",
-      "MediaPipe",
-      "CUDA",
-      "Scikit-learn",
-      "NumPy",
-      "Pandas",
-      "TensorRT",
-    ],
-  },
-  {
-    category: "AI Systems & Data Engineering",
-    items: [
-      "LLM Integration & Prompt Engineering",
-      "Retrieval-Augmented Generation (RAG)",
-      "Vector Databases (ChromaDB)",
-      "Abstract Syntax Tree (AST) Parsing",
-      "Data Pipelines & ETL",
-      "Web Data Extraction",
-      "Pydantic V2",
-      "FastAPI Microservices",
-      "RESTful APIs & Webhooks",
-      "XGBoost",
-    ],
-  },
-  {
-    category: "Core Computer Science & Systems Security",
-    items: [
+      "Concurrency & Async I/O",
+      "Latency & Memory Optimization",
+      "Inference Runtimes (ONNX / TensorRT)",
+      "Linux Systems & POSIX",
       "Data Structures & Algorithms",
-      "System Design Principles",
-      "Concurrency & Multithreading",
-      "Applied Cryptography",
-      "Linux Systems Programming",
-      "Object-Oriented Design",
-      "Computer Networks",
-      "Post-Quantum Cryptography Primitives",
+      "Distributed System Design",
     ],
   },
 ];
@@ -151,19 +131,7 @@ export const education: Education[] = [
     institution: "Indian Institute of Technology, Bombay",
     period: "2019 — 2025",
     details:
-      "Core Coursework: Computer Programming, Data Science, Machine Learning, Web Development, Systems Security, Probability & Random Processes, Linear Algebra, Applied Cryptography, Neuromorphic Engineering, Technical Communication.",
-  },
-  {
-    degree: "All India Senior School Certificate Examination (Class XII)",
-    institution: "Modern Delhi Public School",
-    period: "2019",
-    score: "93.0%",
-  },
-  {
-    degree: "Secondary School Examination (Class X)",
-    institution: "Modern Delhi Public School",
-    period: "2017",
-    score: "CGPA 10.0 / 10.0",
+      "Core Coursework: Machine Learning, Data Science, Systems Security, Algorithms, Linear Algebra, Applied Cryptography.",
   },
 ];
 
@@ -171,7 +139,7 @@ export interface Certification {
   title: string;
   issuer: string;
   year: string;
-  topics: string[];
+  topics?: string[];
 }
 
 export const certifications: Certification[] = [
@@ -179,30 +147,11 @@ export const certifications: Certification[] = [
     title: "Machine Learning / AI Specialization",
     issuer: "DeepLearning.AI",
     year: "2025",
-    topics: [
-      "Supervised Machine Learning",
-      "Unsupervised Learning",
-      "Deep Learning",
-      "Convolutional Neural Networks",
-      "Recurrent Neural Networks",
-      "Recommender Systems",
-      "Collaborative Filtering",
-      "Anomaly Detection",
-    ],
   },
   {
     title: "Data Science Professional Certificate",
     issuer: "IBM",
     year: "2025",
-    topics: [
-      "Data Analysis & Visualization",
-      "Data Wrangling",
-      "Feature Engineering",
-      "Predictive Analytics",
-      "Machine Learning with Python",
-      "RESTful APIs",
-      "SQL & Relational Databases",
-    ],
   },
 ];
 
@@ -218,10 +167,6 @@ export const achievements = [
   {
     title: "National Talent Search (NTSE) Scholar — 2017",
     context: "National-level merit scholarship awarded by NCERT, Government of India",
-  },
-  {
-    title: "Rank 1 — Aryabhatta Inter-School Mathematics Competition",
-    context: "National Capital Region, 2015",
   },
 ];
 

@@ -25,19 +25,20 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aryan Singh Nagar — AI/ML & Systems Engineer | IIT Bombay '25",
+  title: "Aryan Singh Nagar — AI-Native Developer | IIT Bombay '25",
   description:
-    "Portfolio of Aryan Singh Nagar — Electrical Engineering graduate from IIT Bombay ('25, JEE Advanced AIR 413). Specializing in AI/ML, computing systems, and software engineering with strong analytical foundations.",
+    "Portfolio of Aryan Singh Nagar — Electrical Engineering graduate from IIT Bombay ('25, JEE Advanced AIR 413). Specializing in AI-native development, LLM architectures, and high-performance software engineering.",
   keywords: [
     "Aryan Singh Nagar",
-    "AI/ML Engineer",
-    "Systems Engineer",
+    "AI-Native Developer",
+    "AI Engineer",
     "IIT Bombay",
-    "Machine Learning",
+    "LLM Architecture",
+    "Agentic Workflows",
     "Software Engineer",
-    "Computer Vision",
     "Electrical Engineering",
     "Python",
+    "TypeScript",
     "C++",
     "Rust",
   ],
@@ -51,9 +52,9 @@ export const metadata: Metadata = {
     apple: "/logo.svg",
   },
   openGraph: {
-    title: "Aryan Singh Nagar — AI/ML & Systems Engineer | IIT Bombay '25",
+    title: "Aryan Singh Nagar — AI-Native Developer | IIT Bombay '25",
     description:
-      "IIT Bombay '25 (B.Tech EE) · JEE Advanced AIR 413 · AI/ML & Systems Engineer",
+      "IIT Bombay '25 (B.Tech EE) · JEE Advanced AIR 413 · AI-Native Developer",
     url: "https://aryansinghnagar.github.io",
     siteName: "Aryan Singh Nagar",
     type: "profile",
@@ -61,9 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aryan Singh Nagar — AI/ML & Systems Engineer | IIT Bombay '25",
+    title: "Aryan Singh Nagar — AI-Native Developer | IIT Bombay '25",
     description:
-      "IIT Bombay '25 (B.Tech EE) · JEE Advanced AIR 413 · AI/ML & Systems Engineer",
+      "IIT Bombay '25 (B.Tech EE) · JEE Advanced AIR 413 · AI-Native Developer",
   },
   robots: {
     index: true,
@@ -94,7 +95,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Aryan Singh Nagar",
-              jobTitle: "AI/ML & Systems Engineer",
+              jobTitle: "AI-Native Developer",
               email: "auricwings13@gmail.com",
               url: "https://aryansinghnagar.github.io",
               sameAs: [
@@ -106,11 +107,14 @@ export default function RootLayout({
                 name: "Indian Institute of Technology, Bombay",
               },
               knowsAbout: [
+                "AI-Native Development",
                 "Artificial Intelligence",
                 "Machine Learning",
-                "Computer Vision",
-                "Systems Engineering",
+                "Large Language Models",
+                "Full-Stack Development",
+                "Low-Latency Systems",
                 "Python",
+                "TypeScript",
                 "C++",
                 "Rust",
                 "Data Structures and Algorithms",

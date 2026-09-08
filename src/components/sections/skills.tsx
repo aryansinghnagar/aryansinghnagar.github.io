@@ -5,10 +5,10 @@ import { skills } from '@/lib/portfolio-data';
 import { Card, CardContent } from '@/components/ui/card';
 
 const categoryIcons: Record<string, string> = {
-  'Programming Languages & Core Systems': '{ }',
-  'Machine Learning & Computer Vision': '◎',
-  'AI Systems & Data Engineering': '∑',
-  'Core Computer Science & Systems Security': '◆',
+  'AI & Agentic Systems': '∑',
+  'Languages & Core Tooling': '{ }',
+  'Application & Product Stack': '◈',
+  'Systems & Performance Foundations': '◆',
 };
 
 export function Skills() {

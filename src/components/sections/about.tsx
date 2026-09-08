@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MapPin, Mail, Phone, GraduationCap, Award, Quote } from 'lucide-react';
-import { profile, stats } from '@/lib/portfolio-data';
+import { Award } from 'lucide-react';
+import { stats } from '@/lib/portfolio-data';
 import { Card, CardContent } from '@/components/ui/card';
 
 export function About() {
@@ -24,48 +24,24 @@ export function About() {
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-neon to-transparent" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-12 gap-10">
+        <div className="grid lg:grid-cols-12 gap-10 items-center">
           {/* Narrative */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="lg:col-span-7 space-y-5"
+            className="lg:col-span-7 space-y-6"
           >
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I am <span className="text-foreground font-medium">Aryan Singh Nagar</span>, an{' '}
-              <span className="text-neon font-medium">AI/ML &amp; Systems Engineer</span> with a Bachelor of Technology in Electrical Engineering from the{' '}
-              <span className="text-foreground font-medium">Indian Institute of Technology, Bombay (2019–2025)</span>.
+            <p className="text-lg text-foreground/90 leading-relaxed">
+              I am <span className="text-foreground font-semibold">Aryan Singh Nagar</span>, an{' '}
+              <span className="text-neon font-medium">AI-Native Developer</span> graduated from{' '}
+              <span className="text-foreground font-medium">IIT Bombay (Class of 2025)</span>. I specialize in architecting end-to-end intelligent systems, multi-agent orchestration, and high-throughput retrieval pipelines paired with responsive full-stack applications.
             </p>
 
-            <p className="text-muted-foreground leading-relaxed">
-              {profile.summary}
+            <p className="text-base text-muted-foreground leading-relaxed">
+              Rather than treating models as black boxes, I engineer software from first principles—grounded in token latency, memory budgets, and asynchronous concurrency. Backed by rigorous analytical discipline from IIT Bombay, I focus on building reliable, production-ready AI software with high performance under the hood.
             </p>
-
-            <p className="text-muted-foreground leading-relaxed">
-              My technical work centers on understanding computing systems from first principles. Through rigorous exploratory implementations, I investigate <span className="text-foreground">machine learning architectures &amp; prompt design</span>, <span className="text-foreground">low-latency computer vision</span>, <span className="text-foreground">systems programming &amp; concurrency</span>, and <span className="text-foreground">applied cryptography</span>. Rather than treating high-level frameworks as black boxes, I focus on understanding underlying abstractions, analyzing computational complexity, and writing clean, reliable, and maintainable software.
-            </p>
-
-            <p className="text-muted-foreground leading-relaxed">
-              With a strong analytical and quantitative foundation from IIT Bombay, I combine rapid technical comprehension with disciplined execution. I am seeking full-time opportunities where I can contribute to core engineering initiatives, collaborate with experienced engineering teams, and deliver reliable, high-performance software.
-            </p>
-
-            {/* Pull quote */}
-            <div className="relative pl-6 border-l-2 border-neon/40 my-8">
-              <Quote className="absolute -left-3 -top-2 h-5 w-5 text-neon bg-background p-0.5" />
-              <p className="font-display italic text-lg text-platinum leading-relaxed">
-                {profile.philosophy}
-              </p>
-            </div>
-
-            {/* Quick facts */}
-            <div className="grid sm:grid-cols-2 gap-3 pt-4">
-              <FactRow icon={MapPin} label="Location" value={profile.location} />
-              <FactRow icon={Mail} label="Email" value={profile.email} />
-              <FactRow icon={Phone} label="Phone" value={profile.phone} />
-              <FactRow icon={GraduationCap} label="Education" value="IIT Bombay (B.Tech EE '25)" />
-            </div>
           </motion.div>
 
           {/* Stats grid */}
@@ -109,27 +85,5 @@ export function About() {
         </div>
       </div>
     </section>
-  );
-}
-
-function FactRow({
-  icon: Icon,
-  label,
-  value,
-}: {
-  icon: React.ComponentType<{ className?: string }>;
-  label: string;
-  value: string;
-}) {
-  return (
-    <div className="flex items-start gap-3 p-3 rounded-md bg-card/30 border border-border/30">
-      <Icon className="h-4 w-4 text-neon mt-0.5 shrink-0" />
-      <div className="min-w-0">
-        <div className="text-xs text-muted-foreground font-mono uppercase tracking-wider">
-          {label}
-        </div>
-        <div className="text-sm text-foreground font-medium truncate">{value}</div>
-      </div>
-    </div>
   );
 }
