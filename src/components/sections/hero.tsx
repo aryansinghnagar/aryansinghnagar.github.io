@@ -94,9 +94,9 @@ export function Hero() {
                 size="lg"
                 className="bg-neon text-background hover:bg-neon/90 font-medium glow-neon-soft"
               >
-                <a href="#projects">
+                <a href="#about">
                   <Sparkles className="h-4 w-4 mr-2" />
-                  View My Work
+                  Explore Background
                 </a>
               </Button>
               <Button

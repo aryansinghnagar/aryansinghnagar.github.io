@@ -19,7 +19,7 @@ export function About() {
         >
           <p className="font-mono text-xs text-neon tracking-widest mb-3">01 / ABOUT</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Engineering AI systems that ship.
+            Strong foundations. Relentless curiosity.
           </h2>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-neon to-transparent" />
         </motion.div>
@@ -37,8 +37,8 @@ export function About() {
               I&apos;m <span className="text-foreground font-medium">Aryan Singh Nagar</span> — an{' '}
               <span className="text-neon font-medium">AI/ML &amp; Systems Engineer</span> with a B.Tech in Electrical Engineering from{' '}
               <span className="text-foreground font-medium">IIT Bombay (2019–2025)</span>. My handle{' '}
-              <span className="text-platinum font-mono">SilverFox</span> follows me across GitHub
-              and personal projects — a signature of individuality in serious engineering work.
+              <span className="text-platinum font-mono">SilverFox</span> reflects an individual signature
+              across my engineering explorations and technical deep dives.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
@@ -46,18 +46,11 @@ export function About() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              My engineering work spans <span className="text-foreground">agentic LLM systems &amp; devtools</span>{' '}
-              (JoBot — SQLite WAL task engine, Candidate Truth Store, multi-provider routing; PReviewBot — AST-aware PR review engine with bounded concurrency),{' '}
-              <span className="text-foreground">low-latency edge computer vision</span> (Maestro —
-              ONNX Runtime multi-backend acceleration with sub-15ms latency),{' '}
-              <span className="text-foreground">applied post-quantum security</span> (AnonyMus v3.0 —
-              Rust/FastAPI core, ML-KEM-768, Tor v3 Onion transport), and{' '}
-              <span className="text-foreground">custom OS environments</span> (Ars Arcanum &amp; Scriptorium —
-              Debian minimal live-build environments with AppArmor MAC sandboxing and reproducible publishing toolchains).
+              My technical work centers on understanding core systems from first principles. Through self-directed exploratory prototyping and hands-on experiments, I investigate <span className="text-foreground">agentic LLM orchestration &amp; prompt architectures</span>, <span className="text-foreground">low-latency computer vision pipelines</span>, <span className="text-foreground">systems programming &amp; concurrency</span>, and <span className="text-foreground">applied cryptographic protocols</span>. Rather than treating frameworks as black boxes, I focus on understanding underlying abstractions, profiling performance bottlenecks, and writing clean, maintainable code.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              I embrace the challenge of uncharted technical domains—whether implementing nascent post-quantum cryptographic primitives, engineering syntax-aware compiler tools, or building hardened Linux appliances. I pair this willingness to take calculated architectural bets with a disciplined defensive mindset: deterministic schema validation, comprehensive test coverage, and human-first ethical boundaries. I am eager to bring this versatility, curiosity, and rapid execution speed to forward-thinking engineering teams building consequential software.
+              As a 2025 graduate with a rigorous analytical pedigree, I bring high agency, fast learning velocity, and genuine enthusiasm for tackling steep engineering challenges. I am eager to contribute this foundational strength, curiosity, and disciplined execution to high-caliber engineering teams solving hard, impactful problems.
             </p>
 
             {/* Pull quote */}

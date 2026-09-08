@@ -16,7 +16,7 @@ export function Education() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <p className="font-mono text-xs text-neon tracking-widest mb-3">05 / EDUCATION</p>
+          <p className="font-mono text-xs text-neon tracking-widest mb-3">03 / EDUCATION</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
             Foundations &amp; credentials.
           </h2>
