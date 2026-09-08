@@ -46,9 +46,9 @@ export function Projects() {
           </h2>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-neon to-transparent" />
           <p className="mt-6 text-muted-foreground max-w-2xl">
-            A portfolio of systems spanning agentic operating systems, syntax-aware devtools,
-            low-latency edge computer vision, applied post-quantum cryptography, and custom OS appliances.
-            Each project pairs architectural curiosity with defensive design and an active engineering roadmap.
+            A portfolio of projects spanning AI-native applications, agentic workflows,
+            machine learning models, and data science pipelines.
+            Each project pairs algorithmic rigor with clean, reliable implementation.
           </p>
         </motion.div>
 

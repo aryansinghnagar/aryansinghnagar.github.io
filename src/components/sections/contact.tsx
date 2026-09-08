@@ -77,7 +77,7 @@ export function Contact() {
           </h2>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-neon to-transparent mx-auto" />
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Open to full-time engineering opportunities in AI-native development and software engineering. Available immediately and open to relocation.
+            Open to full-time opportunities in AI-native development, machine learning, and data science. Available immediately and open to relocation.
           </p>
         </motion.div>
 

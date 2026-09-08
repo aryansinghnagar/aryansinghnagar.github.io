@@ -27,20 +27,18 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Aryan Singh Nagar — AI-Native Developer | IIT Bombay '25",
   description:
-    "Portfolio of Aryan Singh Nagar — Electrical Engineering graduate from IIT Bombay ('25, JEE Advanced AIR 413). Specializing in AI-native development, LLM architectures, and high-performance software engineering.",
+    "Portfolio of Aryan Singh Nagar — IIT Bombay ('25, JEE Advanced AIR 413). Specializing in Python, SQL, Git, DSA, AI-native development, machine learning, deep learning, and data science.",
   keywords: [
     "Aryan Singh Nagar",
     "AI-Native Developer",
-    "AI Engineer",
-    "IIT Bombay",
-    "LLM Architecture",
-    "Agentic Workflows",
-    "Software Engineer",
-    "Electrical Engineering",
+    "Machine Learning",
+    "Deep Learning",
+    "Data Science",
     "Python",
-    "TypeScript",
-    "C++",
-    "Rust",
+    "SQL",
+    "Git",
+    "Data Structures and Algorithms",
+    "IIT Bombay",
   ],
   authors: [{ name: "Aryan Singh Nagar" }],
   creator: "Aryan Singh Nagar",
@@ -54,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aryan Singh Nagar — AI-Native Developer | IIT Bombay '25",
     description:
-      "IIT Bombay '25 (B.Tech EE) · JEE Advanced AIR 413 · AI-Native Developer",
+      "IIT Bombay '25 · AI-Native Developer · Python, SQL, Git, DSA, Machine Learning, Deep Learning, Data Science",
     url: "https://aryansinghnagar.github.io",
     siteName: "Aryan Singh Nagar",
     type: "profile",
@@ -64,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Aryan Singh Nagar — AI-Native Developer | IIT Bombay '25",
     description:
-      "IIT Bombay '25 (B.Tech EE) · JEE Advanced AIR 413 · AI-Native Developer",
+      "IIT Bombay '25 · AI-Native Developer · Python, SQL, Git, DSA, Machine Learning, Deep Learning, Data Science",
   },
   robots: {
     index: true,
@@ -108,17 +106,13 @@ export default function RootLayout({
               },
               knowsAbout: [
                 "AI-Native Development",
-                "Artificial Intelligence",
                 "Machine Learning",
-                "Large Language Models",
-                "Full-Stack Development",
-                "Low-Latency Systems",
+                "Deep Learning",
+                "Data Science",
                 "Python",
-                "TypeScript",
-                "C++",
-                "Rust",
+                "SQL",
+                "Git",
                 "Data Structures and Algorithms",
-                "Software Engineering",
               ],
             }),
           }}

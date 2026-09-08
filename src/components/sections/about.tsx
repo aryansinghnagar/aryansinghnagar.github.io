@@ -35,12 +35,12 @@ export function About() {
           >
             <p className="text-lg text-foreground/90 leading-relaxed">
               I am <span className="text-foreground font-semibold">Aryan Singh Nagar</span>, an{' '}
-              <span className="text-neon font-medium">AI-Native Developer</span> graduated from{' '}
-              <span className="text-foreground font-medium">IIT Bombay (Class of 2025)</span>. I specialize in architecting end-to-end intelligent systems, multi-agent orchestration, and high-throughput retrieval pipelines paired with responsive full-stack applications.
+              <span className="text-neon font-medium">AI-Native Developer</span> and graduate of{' '}
+              <span className="text-foreground font-medium">IIT Bombay (Class of 2025)</span>. I focus on core competencies across AI-native development, machine learning, deep learning, and data science—building intelligent systems, agentic workflows, and high-throughput retrieval pipelines.
             </p>
 
             <p className="text-base text-muted-foreground leading-relaxed">
-              Rather than treating models as black boxes, I engineer software from first principles—grounded in token latency, memory budgets, and asynchronous concurrency. Backed by rigorous analytical discipline from IIT Bombay, I focus on building reliable, production-ready AI software with high performance under the hood.
+              Grounded in core fundamentals—data structures &amp; algorithms (DSA), mathematical modeling, and statistical rigor—I write clean, production-grade Python and SQL, backed by disciplined Git version control. I build scalable, high-performance solutions with deep attention to algorithmic efficiency and data integrity.
             </p>
           </motion.div>
 
