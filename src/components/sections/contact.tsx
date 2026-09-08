@@ -73,11 +73,11 @@ export function Contact() {
         >
           <p className="font-mono text-xs text-neon tracking-widest mb-3">04 / CONTACT</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Let&apos;s build something.
+            Get In Touch
           </h2>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-neon to-transparent mx-auto" />
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Open to entry-level and junior roles across Software Engineering, AI/ML, and Systems. Eager to bring strong analytical foundations, rapid learning velocity, and high dedication to impactful engineering teams. Available immediately, open to relocation.
+            Open to full-time engineering opportunities in Software Engineering, AI/ML, and Systems. Available immediately and open to relocation. Feel free to connect via email, LinkedIn, or the inquiry form below.
           </p>
         </motion.div>
 
@@ -209,9 +209,9 @@ export function Contact() {
                 {status === 'sending'
                   ? 'Sending message...'
                   : status === 'sent'
-                    ? 'Message sent! I\'ll reply soon.'
+                    ? 'Message sent successfully. I will respond promptly.'
                     : status === 'error'
-                      ? 'Failed to send. Please try again.'
+                      ? 'Failed to send message. Please try again or email directly.'
                       : (
                         <>
                           <Send className="h-4 w-4 mr-2" />
@@ -221,7 +221,7 @@ export function Contact() {
               </Button>
 
               <p className="text-xs text-muted-foreground text-center pt-2">
-                Submits directly to inbox. You can also email directly at{' '}
+                You can also reach me directly via email at{' '}
                 <a href={`mailto:${profile.email}`} className="text-neon hover:underline">
                   {profile.email}
                 </a>

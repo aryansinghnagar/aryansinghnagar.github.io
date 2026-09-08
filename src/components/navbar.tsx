@@ -33,14 +33,14 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a
-            href="#hero"
+            href="#intro"
             className="group flex items-center gap-2 font-display font-semibold"
           >
             <span className="text-lg tracking-tight">
               A<span className="text-neon">S</span>N
             </span>
             <span className="hidden sm:inline text-xs font-mono text-muted-foreground group-hover:text-platinum transition-colors">
-              /SilverFox
+              · IIT Bombay
             </span>
           </a>
 

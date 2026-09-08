@@ -18,7 +18,7 @@ export function Education() {
         >
           <p className="font-mono text-xs text-neon tracking-widest mb-3">03 / EDUCATION</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Foundations &amp; credentials.
+            Education &amp; Academic Credentials
           </h2>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-neon to-transparent" />
         </motion.div>
@@ -105,7 +105,7 @@ export function Education() {
           <div>
             <h3 className="font-display text-lg font-semibold text-platinum flex items-center gap-2 mb-4">
               <Trophy className="h-5 w-5 text-neon" />
-              Achievements
+              Honors &amp; Awards
             </h3>
             <div className="space-y-3">
               {achievements.map((ach, i) => (

@@ -5,9 +5,8 @@
 
 export const profile = {
   name: "Aryan Singh Nagar",
-  handle: "SilverFox",
-  tagline: "AI/ML & Systems Engineer · IIT Bombay EE '25 · Driven by First-Principles & Applied Systems",
-  subTagline: "IIT Bombay EE '25 · JEE Adv AIR 413 · Ready to Contribute",
+  tagline: "AI/ML & Systems Engineer · IIT Bombay Electrical Engineering '25",
+  subTagline: "B.Tech in Electrical Engineering, IIT Bombay · JEE Advanced AIR 413",
   location: "India (Open to Relocation)",
   email: "auricwings13@gmail.com",
   phone: "+91 782-775-6669",
@@ -16,9 +15,9 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/aryan-singh-nagar-414675263",
   github: "https://github.com/aryansinghnagar",
   summary:
-    "IIT Bombay Electrical Engineering graduate (B.Tech, 2019–2025) with strong foundations in computing systems, machine learning, and applied mathematics. Passionate about exploring complex engineering problems from first principles—diving deep into AI/ML pipelines, low-latency systems, and privacy-preserving architectures through hands-on exploratory prototyping. Driven by curiosity, rapid learning velocity, and a disciplined commitment to building resilient software.",
+    "Electrical Engineering graduate from the Indian Institute of Technology, Bombay (B.Tech, 2019–2025) with a strong foundation in computing systems, machine learning, and applied mathematics. Experienced in developing exploratory implementations across AI/ML pipelines, low-latency computing, and systems software. Demonstrates high analytical rigor, rapid technical comprehension, and a disciplined approach to building reliable, high-performance software.",
   philosophy:
-    "I believe high-impact engineering begins with deep foundational curiosity. Whether experimenting with emerging ML architectures, exploring systems internals, or dissecting distributed protocols, I approach technical problems from first principles—optimizing for correctness, clarity, and continuous learning.",
+    "I approach engineering challenges through first-principles analysis and disciplined implementation. Grounded in a strong mathematical and systems foundation, I focus on understanding core abstractions, optimizing efficiency, and writing clean, maintainable code.",
 };
 
 export const socials = [
@@ -33,15 +32,15 @@ export const socials = [
 ];
 
 export const stats = [
-  { value: "AIR 413", label: "JEE Advanced 2019", context: "Top ~0.3% of 150k candidates nationwide" },
-  { value: "AIR 262", label: "JEE Mains 2019", context: "Top ~0.05% of candidates nationwide" },
-  { value: "IIT Bombay", label: "Electrical Engineering '25", context: "B.Tech with rigorous systems & ML coursework" },
-  { value: "NTSE Scholar", label: "National Talent Search", context: "NCERT national merit fellowship" },
+  { value: "AIR 413", label: "JEE Advanced 2019", context: "All India Rank · Top ~0.3% of 150,000 candidates" },
+  { value: "AIR 262", label: "JEE Main 2019", context: "All India Rank · Top ~0.05% of 1.1M candidates" },
+  { value: "IIT Bombay", label: "B.Tech, Electrical Engineering", context: "Class of 2025 · Rigorous coursework in systems & ML" },
+  { value: "NTSE Scholar", label: "National Talent Search", context: "NCERT prestigious national merit fellowship" },
 ];
 
 export const skills = [
   {
-    category: "Languages & Core Systems",
+    category: "Programming Languages & Core Systems",
     items: [
       "Python",
       "C++",
@@ -54,14 +53,14 @@ export const skills = [
       "Node.js",
       "Docker",
       "Git",
-      "Linux (Debian/Mint)",
+      "Linux (Debian/Ubuntu)",
       "Bash / POSIX Shell",
       "SQL",
       "Tailwind CSS",
     ],
   },
   {
-    category: "ML & Computer Vision",
+    category: "Machine Learning & Computer Vision",
     items: [
       "PyTorch",
       "TensorFlow",
@@ -76,28 +75,28 @@ export const skills = [
     ],
   },
   {
-    category: "AI Systems & Infrastructure",
+    category: "AI Systems & Data Engineering",
     items: [
-      "LLM Workflows & Prompt Engineering",
+      "LLM Integration & Prompt Engineering",
       "Retrieval-Augmented Generation (RAG)",
       "Vector Databases (ChromaDB)",
-      "AST Parsing & Tree-sitter",
+      "Abstract Syntax Tree (AST) Parsing",
       "Data Pipelines & ETL",
-      "Web Scraping",
+      "Web Data Extraction",
       "Pydantic V2",
       "FastAPI Microservices",
-      "REST APIs & Webhooks",
+      "RESTful APIs & Webhooks",
       "XGBoost",
     ],
   },
   {
-    category: "Foundations & Security",
+    category: "Core Computer Science & Systems Security",
     items: [
       "Data Structures & Algorithms",
       "System Design Principles",
       "Concurrency & Multithreading",
       "Applied Cryptography",
-      "Linux Systems & Shell Internals",
+      "Linux Systems Programming",
       "Object-Oriented Design",
       "Computer Networks",
       "Post-Quantum Cryptography Primitives",
@@ -148,23 +147,23 @@ export interface Education {
 
 export const education: Education[] = [
   {
-    degree: "B.Tech, Electrical Engineering",
+    degree: "Bachelor of Technology (B.Tech), Electrical Engineering",
     institution: "Indian Institute of Technology, Bombay",
     period: "2019 — 2025",
     details:
-      "Core Coursework: Programming, Data Science, Machine Learning, Web Development, System Security, Probability, Statistics, Cryptography, Neuromorphic Engineering, Technical Communication.",
+      "Core Coursework: Computer Programming, Data Science, Machine Learning, Web Development, Systems Security, Probability & Random Processes, Linear Algebra, Applied Cryptography, Neuromorphic Engineering, Technical Communication.",
   },
   {
-    degree: "AISSCE — Class XII",
+    degree: "All India Senior School Certificate Examination (Class XII)",
     institution: "Modern Delhi Public School",
     period: "2019",
-    score: "93%",
+    score: "93.0%",
   },
   {
-    degree: "AISSE — Class X",
+    degree: "Secondary School Examination (Class X)",
     institution: "Modern Delhi Public School",
     period: "2017",
-    score: "CGPA 10 / 10",
+    score: "CGPA 10.0 / 10.0",
   },
 ];
 
@@ -177,16 +176,15 @@ export interface Certification {
 
 export const certifications: Certification[] = [
   {
-    title: "ML / AI Specialization",
+    title: "Machine Learning / AI Specialization",
     issuer: "DeepLearning.AI",
     year: "2025",
     topics: [
-      "Supervised ML",
-      "Unsupervised ML",
+      "Supervised Machine Learning",
+      "Unsupervised Learning",
       "Deep Learning",
-      "Computer Vision",
-      "CNN",
-      "RNN",
+      "Convolutional Neural Networks",
+      "Recurrent Neural Networks",
       "Recommender Systems",
       "Collaborative Filtering",
       "Anomaly Detection",
@@ -197,21 +195,30 @@ export const certifications: Certification[] = [
     issuer: "IBM",
     year: "2025",
     topics: [
-      "Web Scraping",
+      "Data Analysis & Visualization",
       "Data Wrangling",
       "Feature Engineering",
-      "Interactive Visualization",
       "Predictive Analytics",
-      "AI-assisted Data Science",
-      "REST APIs",
+      "Machine Learning with Python",
+      "RESTful APIs",
+      "SQL & Relational Databases",
     ],
   },
 ];
 
 export const achievements = [
-  { title: "AIR 413 — JEE Advanced 2019", context: "Top ~0.3% of ~150,000 candidates" },
-  { title: "AIR 262 — JEE Mains 2019", context: "Top ~0.05% of candidates nationwide" },
-  { title: "NTSE Scholar — 2017", context: "National Talent Search Examination, NCERT" },
+  {
+    title: "All India Rank 413 — JEE Advanced 2019",
+    context: "Top ~0.3% among approximately 150,000 qualified candidates nationwide",
+  },
+  {
+    title: "All India Rank 262 — JEE Main 2019",
+    context: "Top ~0.05% among approximately 1.1 million candidates nationwide",
+  },
+  {
+    title: "National Talent Search (NTSE) Scholar — 2017",
+    context: "National-level merit scholarship awarded by NCERT, Government of India",
+  },
   {
     title: "Rank 1 — Aryabhatta Inter-School Mathematics Competition",
     context: "National Capital Region, 2015",

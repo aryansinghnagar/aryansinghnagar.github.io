@@ -19,7 +19,7 @@ export function About() {
         >
           <p className="font-mono text-xs text-neon tracking-widest mb-3">01 / ABOUT</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Strong foundations. Relentless curiosity.
+            Background &amp; Engineering Focus
           </h2>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-neon to-transparent" />
         </motion.div>
@@ -34,11 +34,9 @@ export function About() {
             className="lg:col-span-7 space-y-5"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I&apos;m <span className="text-foreground font-medium">Aryan Singh Nagar</span> — an{' '}
-              <span className="text-neon font-medium">AI/ML &amp; Systems Engineer</span> with a B.Tech in Electrical Engineering from{' '}
-              <span className="text-foreground font-medium">IIT Bombay (2019–2025)</span>. My handle{' '}
-              <span className="text-platinum font-mono">SilverFox</span> reflects an individual signature
-              across my engineering explorations and technical deep dives.
+              I am <span className="text-foreground font-medium">Aryan Singh Nagar</span>, an{' '}
+              <span className="text-neon font-medium">AI/ML &amp; Systems Engineer</span> with a Bachelor of Technology in Electrical Engineering from the{' '}
+              <span className="text-foreground font-medium">Indian Institute of Technology, Bombay (2019–2025)</span>.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
@@ -46,11 +44,11 @@ export function About() {
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              My technical work centers on understanding core systems from first principles. Through self-directed exploratory prototyping and hands-on experiments, I investigate <span className="text-foreground">agentic LLM orchestration &amp; prompt architectures</span>, <span className="text-foreground">low-latency computer vision pipelines</span>, <span className="text-foreground">systems programming &amp; concurrency</span>, and <span className="text-foreground">applied cryptographic protocols</span>. Rather than treating frameworks as black boxes, I focus on understanding underlying abstractions, profiling performance bottlenecks, and writing clean, maintainable code.
+              My technical work centers on understanding computing systems from first principles. Through rigorous exploratory implementations, I investigate <span className="text-foreground">machine learning architectures &amp; prompt design</span>, <span className="text-foreground">low-latency computer vision</span>, <span className="text-foreground">systems programming &amp; concurrency</span>, and <span className="text-foreground">applied cryptography</span>. Rather than treating high-level frameworks as black boxes, I focus on understanding underlying abstractions, analyzing computational complexity, and writing clean, reliable, and maintainable software.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              As a 2025 graduate with a rigorous analytical pedigree, I bring high agency, fast learning velocity, and genuine enthusiasm for tackling steep engineering challenges. I am eager to contribute this foundational strength, curiosity, and disciplined execution to high-caliber engineering teams solving hard, impactful problems.
+              With a strong analytical and quantitative foundation from IIT Bombay, I combine rapid technical comprehension with disciplined execution. I am seeking full-time opportunities where I can contribute to core engineering initiatives, collaborate with experienced engineering teams, and deliver reliable, high-performance software.
             </p>
 
             {/* Pull quote */}
@@ -66,7 +64,7 @@ export function About() {
               <FactRow icon={MapPin} label="Location" value={profile.location} />
               <FactRow icon={Mail} label="Email" value={profile.email} />
               <FactRow icon={Phone} label="Phone" value={profile.phone} />
-              <FactRow icon={GraduationCap} label="Education" value="IIT Bombay EE '25" />
+              <FactRow icon={GraduationCap} label="Education" value="IIT Bombay (B.Tech EE '25)" />
             </div>
           </motion.div>
 

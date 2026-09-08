@@ -25,21 +25,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aryan Singh Nagar — AI/ML & Systems Engineer",
+  title: "Aryan Singh Nagar — AI/ML & Systems Engineer | IIT Bombay '25",
   description:
-    "IIT Bombay EE '25 graduate (JEE Adv AIR 413) engineering agentic LLM infrastructure, low-latency computer vision, and privacy-preserving systems. Shipped multimodal ML pipelines (35+ FPS), microservices (1,000+ QPS), and post-quantum protocols.",
+    "Portfolio of Aryan Singh Nagar — Electrical Engineering graduate from IIT Bombay ('25, JEE Advanced AIR 413). Specializing in AI/ML, computing systems, and software engineering with strong analytical foundations.",
   keywords: [
     "Aryan Singh Nagar",
-    "SilverFox",
     "AI/ML Engineer",
     "Systems Engineer",
-    "Agentic AI",
-    "LLM Engineer",
-    "Computer Vision",
-    "Post-Quantum Cryptography",
     "IIT Bombay",
+    "Machine Learning",
     "Software Engineer",
-    "Portfolio",
+    "Computer Vision",
+    "Electrical Engineering",
+    "Python",
+    "C++",
+    "Rust",
   ],
   authors: [{ name: "Aryan Singh Nagar" }],
   creator: "Aryan Singh Nagar",
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     apple: "/logo.svg",
   },
   openGraph: {
-    title: "Aryan Singh Nagar — AI/ML & Systems Engineer",
+    title: "Aryan Singh Nagar — AI/ML & Systems Engineer | IIT Bombay '25",
     description:
-      "IIT Bombay '25 · JEE Adv AIR 413 · Agentic LLM Infrastructure · Low-Latency Vision · Systems Security",
+      "IIT Bombay '25 (B.Tech EE) · JEE Advanced AIR 413 · AI/ML & Systems Engineer",
     url: "https://aryansinghnagar.github.io",
     siteName: "Aryan Singh Nagar",
     type: "profile",
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aryan Singh Nagar — AI/ML & Systems Engineer",
+    title: "Aryan Singh Nagar — AI/ML & Systems Engineer | IIT Bombay '25",
     description:
-      "IIT Bombay '25 · JEE Adv AIR 413 · Agentic LLM Infrastructure · Low-Latency Vision · Systems Security",
+      "IIT Bombay '25 (B.Tech EE) · JEE Advanced AIR 413 · AI/ML & Systems Engineer",
   },
   robots: {
     index: true,
@@ -94,7 +94,6 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Aryan Singh Nagar",
-              alternateName: "SilverFox",
               jobTitle: "AI/ML & Systems Engineer",
               email: "auricwings13@gmail.com",
               url: "https://aryansinghnagar.github.io",
@@ -107,15 +106,15 @@ export default function RootLayout({
                 name: "Indian Institute of Technology, Bombay",
               },
               knowsAbout: [
-                "Generative AI",
-                "Large Language Models",
+                "Artificial Intelligence",
                 "Machine Learning",
                 "Computer Vision",
+                "Systems Engineering",
                 "Python",
-                "TensorFlow",
-                "Full-Stack Development",
-                "NLP",
-                "Deep Learning",
+                "C++",
+                "Rust",
+                "Data Structures and Algorithms",
+                "Software Engineering",
               ],
             }),
           }}

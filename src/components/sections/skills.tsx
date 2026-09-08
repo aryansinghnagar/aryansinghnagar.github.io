@@ -5,10 +5,10 @@ import { skills } from '@/lib/portfolio-data';
 import { Card, CardContent } from '@/components/ui/card';
 
 const categoryIcons: Record<string, string> = {
-  'Languages & Core Systems': '{ }',
-  'ML & Computer Vision': '◎',
-  'AI Systems & Agentic Infrastructure': '∑',
-  'Foundations & Security': '◆',
+  'Programming Languages & Core Systems': '{ }',
+  'Machine Learning & Computer Vision': '◎',
+  'AI Systems & Data Engineering': '∑',
+  'Core Computer Science & Systems Security': '◆',
 };
 
 export function Skills() {
@@ -24,7 +24,7 @@ export function Skills() {
         >
           <p className="font-mono text-xs text-neon tracking-widest mb-3">02 / SKILLS</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-            Stack &amp; toolbox.
+            Technical Skills &amp; Competencies
           </h2>
           <div className="mt-4 h-px w-24 bg-gradient-to-r from-neon to-transparent" />
         </motion.div>

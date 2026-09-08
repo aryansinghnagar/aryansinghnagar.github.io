@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowDown, Download, Github, Linkedin, Mail, Sparkles } from 'lucide-react';
+import { ArrowDown, Download, Github, Linkedin, Mail, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { profile, socials } from '@/lib/portfolio-data';
@@ -13,10 +13,10 @@ const socialIcons = {
   file: Download,
 };
 
-export function Hero() {
+export function Intro() {
   return (
     <section
-      id="hero"
+      id="intro"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
     >
       {/* Background layers */}
@@ -42,7 +42,7 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-neon" />
               </span>
-              Available for opportunities
+              Open to Opportunities
             </motion.div>
 
             <motion.h1
@@ -58,17 +58,7 @@ export function Hero() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-4 font-mono text-sm sm:text-base text-platinum/70 tracking-wider"
-            >
-              <span className="text-muted-foreground">{"//"}</span> also known as{' '}
-              <span className="text-platinum font-medium">{profile.handle}</span>
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.4 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl lg:mx-0 mx-auto"
             >
               {profile.tagline}
@@ -77,7 +67,7 @@ export function Hero() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.5 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
               className="mt-3 text-base text-platinum/80 font-medium"
             >
               {profile.subTagline}
@@ -86,7 +76,7 @@ export function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.6 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
               className="mt-10 flex flex-wrap gap-4 justify-center lg:justify-start"
             >
               <Button
@@ -95,8 +85,8 @@ export function Hero() {
                 className="bg-neon text-background hover:bg-neon/90 font-medium glow-neon-soft"
               >
                 <a href="#about">
-                  <Sparkles className="h-4 w-4 mr-2" />
-                  Explore Background
+                  <User className="h-4 w-4 mr-2" />
+                  About Me
                 </a>
               </Button>
               <Button
@@ -155,7 +145,7 @@ export function Hero() {
 
                 <Image
                   src={profile.headshot}
-                  alt="Aryan Singh Nagar — headshot"
+                  alt="Aryan Singh Nagar"
                   fill
                   priority
                   sizes="(max-width: 640px) 256px, (max-width: 1024px) 320px, 384px"
@@ -187,7 +177,7 @@ export function Hero() {
                 transition={{ duration: 0.6, delay: 1.0 }}
                 className="absolute -right-4 bottom-1/4 px-3 py-1.5 rounded-md bg-card border border-platinum/30 text-xs font-mono text-platinum shadow-lg"
               >
-                JEE Adv AIR 413
+                JEE Advanced AIR 413
               </motion.div>
             </div>
           </motion.div>
@@ -200,7 +190,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 1.2 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2"
         >
-          <span className="text-xs font-mono text-muted-foreground tracking-widest">SCROLL</span>
+          <span className="text-xs font-mono text-muted-foreground tracking-widest">EXPLORE</span>
           <motion.div
             animate={{ y: [0, 6, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}

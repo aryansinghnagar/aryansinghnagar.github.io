@@ -1,5 +1,5 @@
 import { Navbar } from '@/components/navbar';
-import { Hero } from '@/components/sections/hero';
+import { Intro } from '@/components/sections/intro';
 import { About } from '@/components/sections/about';
 import { Skills } from '@/components/sections/skills';
 import { Education } from '@/components/sections/education';
@@ -17,7 +17,7 @@ export default function Home() {
       <div className="relative z-10 flex flex-col flex-1">
         <Navbar />
         <main className="flex-1">
-          <Hero />
+          <Intro />
           <About />
           <Skills />
           <Education />

@@ -1,6 +1,6 @@
 'use client';
 
-import { Github, Linkedin, Mail, Download, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { profile, socials, navItems } from '@/lib/portfolio-data';
 
 const socialIcons = {
@@ -26,7 +26,7 @@ export function Footer() {
               Aryan Singh <span className="text-neon">Nagar</span>
             </div>
             <div className="font-mono text-xs text-muted-foreground mb-3">
-              {"// "}also known as <span className="text-platinum">SilverFox</span>
+              B.Tech, Electrical Engineering · IIT Bombay &apos;25
             </div>
             <p className="text-sm text-muted-foreground max-w-xs">
               {profile.tagline}
@@ -36,7 +36,7 @@ export function Footer() {
           {/* Nav */}
           <div>
             <div className="font-mono text-xs text-neon uppercase tracking-widest mb-4">
-              Navigate
+              Navigation
             </div>
             <ul className="grid grid-cols-2 gap-2">
               {navItems.map((item) => (
@@ -88,11 +88,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-border/30 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-muted-foreground font-mono">
-            © {year} Aryan Singh Nagar. Built with Next.js, Tailwind &amp; Framer Motion.
+            © {year} Aryan Singh Nagar. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground font-mono flex items-center gap-1.5">
-            Designed in dark neon blue &amp; platinum
-            <Heart className="h-3 w-3 text-neon fill-neon" />
+          <p className="text-xs text-muted-foreground font-mono">
+            Indian Institute of Technology, Bombay · Electrical Engineering (2019–2025)
           </p>
         </div>
       </div>

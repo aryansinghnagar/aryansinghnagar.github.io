@@ -49,11 +49,11 @@ git push -u origin main
 - Wait ~90 seconds for the GitHub Action to complete: https://github.com/aryansinghnagar/aryansinghnagar.github.io/actions
 - Visit your live portfolio: **https://aryansinghnagar.github.io**
 - Run a quick check:
-  - [ ] Hero loads with name + headshot
-  - [ ] All 6 nav links scroll to correct sections
+  - [ ] Introduction loads with name + portrait
+  - [ ] All navigation links scroll to correct sections
   - [ ] Theme toggle (top right) switches dark/light
   - [ ] "Download Resume" downloads the PDF
-  - [ ] Contact form opens email client pre-filled
+  - [ ] Contact form submits properly
   - [ ] Mobile responsive (test in DevTools)
 
 ---
@@ -233,12 +233,10 @@ aryansinghnagar.github.io/
 │   │   ├── page.tsx                # Main page (assembles all sections)
 │   │   └── globals.css             # Neon Blue x Platinum design system
 │   ├── components/
-│   │   ├── sections/               # All portfolio sections
-│   │   │   ├── hero.tsx
+│   │   ├── sections/               # Portfolio sections
+│   │   │   ├── intro.tsx
 │   │   │   ├── about.tsx
 │   │   │   ├── skills.tsx
-│   │   │   ├── experience.tsx
-│   │   │   ├── projects.tsx
 │   │   │   ├── education.tsx
 │   │   │   └── contact.tsx
 │   │   ├── navbar.tsx
@@ -259,8 +257,6 @@ aryansinghnagar.github.io/
 **All portfolio content lives in one file**: `src/lib/portfolio-data.ts`
 
 To update:
-- **Experience**: edit the `experiences` array
-- **Projects**: edit the `projects` array
 - **Skills**: edit the `skills` array
 - **Education / Certifications / Achievements**: edit respective arrays
 - **Contact info / socials**: edit `profile` and `socials` objects
@@ -298,7 +294,7 @@ Common causes:
 Before sharing your portfolio link with recruiters:
 
 - [ ] Site loads at `https://aryansinghnagar.github.io`
-- [ ] All sections render correctly (Hero, About, Skills, Experience, Projects, Education, Contact)
+- [ ] All sections render correctly (Intro, About, Skills, Education, Contact)
 - [ ] Mobile responsive (test on a phone or DevTools mobile view)
 - [ ] Theme toggle works
 - [ ] "Download Resume" downloads the PDF
